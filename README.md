@@ -8,11 +8,11 @@
         
 >to compile LaTeX to pdf and to link .bib files automatically.
 
->Then rewrite
+>>Then rewrite
 
         ./make.sh 
         
->to apply the links
+>>to apply the links
 
->Last but not least enjoy the pdf.
+>Enjoy the pdf.
 
