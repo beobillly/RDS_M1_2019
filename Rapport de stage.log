@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2019.7.17)  17 JUL 2019 18:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2019.7.17)  17 JUL 2019 18:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -288,22 +288,22 @@ LaTeX Info: Redefining \nameref on input line 29.
 \@outlinefile=\write3
 \openout3 = `"Rapport de stage.out"'.
 
-<irif_horizontal.png, id=12, 602.25pt x 200.75pt>
+<irif_horizontal.png, id=52, 602.25pt x 200.75pt>
 File: irif_horizontal.png Graphic file (type png)
 <use irif_horizontal.png>
 Package pdftex.def Info: irif_horizontal.png  used on input line 33.
 (pdftex.def)             Requested size: 137.9979pt x 45.99998pt.
-<Logo80ANS_OR.png, id=14, 399.4925pt x 280.04625pt>
+<Logo80ANS_OR.png, id=54, 399.4925pt x 280.04625pt>
 File: Logo80ANS_OR.png Graphic file (type png)
 <use Logo80ANS_OR.png>
 Package pdftex.def Info: Logo80ANS_OR.png  used on input line 34.
 (pdftex.def)             Requested size: 137.9979pt x 96.7357pt.
-<logop7.png, id=15, 92.5056pt x 36.135pt>
+<logop7.png, id=55, 92.5056pt x 36.135pt>
 File: logop7.png Graphic file (type png)
 <use logop7.png>
 Package pdftex.def Info: logop7.png  used on input line 35.
 (pdftex.def)             Requested size: 137.9979pt x 53.90845pt.
-<Universite_Paris_logo_horizontal.jpg, id=16, 389.455pt x 118.4425pt>
+<Universite_Paris_logo_horizontal.jpg, id=56, 389.455pt x 118.4425pt>
 File: Universite_Paris_logo_horizontal.jpg Graphic file (type jpg)
 <use Universite_Paris_logo_horizontal.jpg>
 Package pdftex.def Info: Universite_Paris_logo_horizontal.jpg  used on input li
@@ -315,9 +315,9 @@ ne 36.
 Logo80ANS_OR.png> <./logop7.png> <./Universite_Paris_logo_horizontal.jpg>] (./R
 apport de stage.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 2.
+(Font)              <7> on input line 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 2.
+(Font)              <5> on input line 4.
 )
 \tf@toc=\write4
 \openout4 = `"Rapport de stage.toc"'.
@@ -328,64 +328,78 @@ been already used, duplicate ignored
                    \relax 
 l.53 \newpage
               [1]
-<coffee.jpg, id=36, 772.8875pt x 718.685pt>
-File: coffee.jpg Graphic file (type jpg)
-<use coffee.jpg>
-Package pdftex.def Info: coffee.jpg  used on input line 63.
-(pdftex.def)             Requested size: 68.99895pt x 64.15247pt.
-File: coffee.jpg Graphic file (type jpg)
-<use coffee.jpg>
-Package pdftex.def Info: coffee.jpg  used on input line 67.
-(pdftex.def)             Requested size: 68.99895pt x 64.15247pt.
-File: coffee.jpg Graphic file (type jpg)
-<use coffee.jpg>
-Package pdftex.def Info: coffee.jpg  used on input line 71.
-(pdftex.def)             Requested size: 68.99895pt x 64.15247pt.
-File: coffee.jpg Graphic file (type jpg)
-<use coffee.jpg>
-Package pdftex.def Info: coffee.jpg  used on input line 75.
-(pdftex.def)             Requested size: 172.5pt x 160.40312pt.
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 85.
+Overfull \hbox (14.16725pt too wide) in paragraph at lines 62--63
+\OT1/cmr/m/n/10 et en par-ti-c-ulier Mr DDDD, qui m'a beau-coup aid^^Se ^^Ra co
+m-pren-dre les probl^^Sematiques
+ []
 
-LaTeX Font Info:    No file OMScmss.fd. on input line 85.
+[2] [3] [4]
+Overfull \hbox (7.05705pt too wide) in paragraph at lines 94--94
+[]\OT1/cmr/bx/n/12 les mis-sions (re-spon-s-abilit^^Ses, t^aches ^^Ra ef-fectue
+r, dossiers
+ []
+
+[5] [6]
+Overfull \hbox (3.94495pt too wide) in paragraph at lines 115--117
+\OT1/cmr/m/n/10 charni^^Rere..., et je suis tr^^Res fier d'avoir pu con-tribuer
+, par-ticiper ^^Ra cette r^^Sevolution.
+ []
+
+[7]
+<coffee.jpg, id=115, 772.8875pt x 718.685pt>
+File: coffee.jpg Graphic file (type jpg)
+<use coffee.jpg>
+Package pdftex.def Info: coffee.jpg  used on input line 128.
+(pdftex.def)             Requested size: 68.99895pt x 64.15247pt.
+File: coffee.jpg Graphic file (type jpg)
+<use coffee.jpg>
+Package pdftex.def Info: coffee.jpg  used on input line 132.
+(pdftex.def)             Requested size: 68.99895pt x 64.15247pt.
+File: coffee.jpg Graphic file (type jpg)
+<use coffee.jpg>
+Package pdftex.def Info: coffee.jpg  used on input line 136.
+(pdftex.def)             Requested size: 68.99895pt x 64.15247pt.
+File: coffee.jpg Graphic file (type jpg)
+<use coffee.jpg>
+Package pdftex.def Info: coffee.jpg  used on input line 140.
+(pdftex.def)             Requested size: 172.5pt x 160.40312pt.
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 154
+.
+LaTeX Font Info:    No file OMScmss.fd. on input line 154.
 
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 85.
+(Font)              for symbol `textbraceleft' on input line 154.
 
 
-Overfull \hbox (15.75119pt too wide) in paragraph at lines 85--86
+Overfull \hbox (15.75119pt too wide) in paragraph at lines 154--155
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[2 <./coffee.jpg>] (./Rapport de stage.bbl
-
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
-
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 92.
- [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 92.
+[8 <./coffee.jpg>] (./Rapport de stage.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 161.
+ [9]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 161.
  (./Rapport de stage.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 92.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 161.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 161.
 Package rerunfilecheck Info: File `"Rapport de stage".out' has not changed.
-(rerunfilecheck)             Checksum: C7AC296463D1F00E5664094943A5F28D;101.
+(rerunfilecheck)             Checksum: 1147573ADBC5B3E638AEF093B7B90791;1042.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 92.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 161.
  ) 
 Here is how much of TeX's memory you used:
- 8029 strings out of 494553
- 119617 string characters out of 6177377
- 392954 words of memory out of 5000000
- 11639 multiletter control sequences out of 15000+600000
- 7268 words of font info for 26 fonts, out of 8000000 for 9000
+ 8065 strings out of 494553
+ 119996 string characters out of 6177377
+ 393954 words of memory out of 5000000
+ 11657 multiletter control sequences out of 15000+600000
+ 7436 words of font info for 27 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 42i,8n,40p,297b,1516s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,8n,40p,659b,1514s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
@@ -394,11 +408,12 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmti12.pfb>
-Output written on "Rapport de stage.pdf" (4 pages, 252042 bytes).
+sfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmtt10.pfb>
+Output written on "Rapport de stage.pdf" (10 pages, 288819 bytes).
 PDF statistics:
- 88 PDF objects out of 1000 (max. 8388607)
- 65 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 500000)
- 42 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 180 PDF objects out of 1000 (max. 8388607)
+ 149 compressed objects within 2 object streams
+ 29 named destinations out of 1000 (max. 500000)
+ 122 words of extra memory for PDF output out of 10000 (max. 10000000)
 
