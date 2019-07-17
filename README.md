@@ -2,8 +2,17 @@
 
 >Open a Terminal or a (K)console.
 
->Write
+>Then write
 
-        ./make.sh to compile to pdf.
+        ./make.sh 
+        
+>to compile LaTeX to pdf and to link .bib files automatically.
 
->Then enjoy your (my) pdf.
+>Then rewrite
+
+        ./make.sh 
+        
+>to apply the links
+
+>Last but not least enjoy the pdf.
+
