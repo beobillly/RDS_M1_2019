@@ -1,0 +1,92 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{hyperref}
+
+\renewcommand\lstlistingname{Quelltext} % Change language of section name
+
+\lstset{ % General setup for the package
+	language=Perl,
+	basicstyle=\small\sffamily,
+	numbers=left,
+ 	numberstyle=\tiny,
+	frame=tb,
+	tabsize=4,
+	columns=fixed,
+	showstringspaces=false,
+	showtabs=false,
+	keepspaces,
+	commentstyle=\color{red},
+	keywordstyle=\color{blue}
+}
+
+\title{Rapport de stage}
+\date{2019-06-01 2019-08-01}
+\author{Lecleire Sebastien}
+\pagenumbering{arabic}
+\begin{document}
+
+\begin{titlepage}
+	\centering
+	\includegraphics[width=0.4\textwidth]{irif_horizontal}
+	\includegraphics[width=0.4\textwidth]{Logo80ANS_OR}\par\vspace{1cm}
+	\includegraphics[width=0.4\textwidth]{logop7}
+	\includegraphics[width=0.4\textwidth]{Universite_Paris_logo_horizontal}\par\vspace{1cm}
+	{\scshape\LARGE Université Paris Diderot \par}
+	\vspace{1cm}
+	{\scshape\Large Rapport de Stage\par}
+	\vspace{1.5cm}
+	{\Large\itshape Sébastien Lecleire\par}
+	\vfill
+	supervisé par\par
+	Yann \textsc{Régis-Gianas}
+
+	\vfill
+\end{titlepage}
+
+
+\newpage
+
+\tableofcontents
+\newpage
+
+\section{Section}
+Hello World !
+Test of a link : \href{http://www.atec.com}{ici}
+\subsection{Subsection}
+
+\begin{figure}[h!]
+  \centering
+  \begin{subfigure}[b]{0.2\linewidth}
+    \includegraphics[width=\linewidth]{coffee.jpg}
+     \caption{Coffee.}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.2\linewidth}
+    \includegraphics[width=\linewidth]{coffee.jpg}
+    \caption{More coffee.}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.2\linewidth}
+    \includegraphics[width=\linewidth]{coffee.jpg}
+    \caption{Tasty coffee.}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.5\linewidth}
+    \includegraphics[width=\linewidth]{coffee.jpg}
+    \caption{Too much coffee.}
+  \end{subfigure}
+  \caption{The same cup of coffee. Multiple times.}
+  \label{fig:coffee3}
+ 
+\end{figure}
+
+\begin{lstlisting}
+#!/usr/bin/perl
+print S(@ARGV);sub S{$r=(@_[0]%4==0&&@_[0]%100!=0)||@_[0]%400=0;}
+\end{lstlisting}
+
+\newpage
+
+\bibliography{bib}
+\bibliographystyle{ieeetr}
+\end{document}
