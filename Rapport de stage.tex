@@ -4,6 +4,7 @@
 \usepackage{listings}
 \usepackage{color}
 \usepackage{hyperref}
+\usepackage{amsmath}
 
 \renewcommand\lstlistingname{Quelltext} % Change language of section name
 
@@ -21,10 +22,6 @@
 	commentstyle=\color{red},
 	keywordstyle=\color{blue}
 }
-
-\title{Rapport de stage}
-\date{2019-06-01 2019-08-01}
-\author{Lecleire Sebastien}
 \pagenumbering{arabic}
 \begin{document}
 
@@ -35,13 +32,20 @@
 	\includegraphics[width=0.4\textwidth]{logop7}
 	\includegraphics[width=0.4\textwidth]{Universite_Paris_logo_horizontal}\par\vspace{1cm}
 	{\scshape\LARGE Université Paris Diderot \par}
+	{\scshape\Large -\par}
+
+	{\scshape\LARGE IRIF \par}
 	\vspace{1cm}
 	{\scshape\Large Rapport de Stage\par}
+	{\scshape\Large du 01/06/2019 au 01/08/2019\par}
+	\vspace{1.5cm}
+	{\scshape\Large éffectué à Paris\par}
 	\vspace{1.5cm}
 	{\Large\itshape Sébastien Lecleire\par}
+	{\Large\itshape Etudiant en MASTER 1 IMPAIRS\par}
 	\vfill
 	supervisé par\par
-	Yann \textsc{Régis-Gianas}
+	Mr Yann \textsc{Régis-Gianas}
 
 	\vfill
 \end{titlepage}
@@ -53,40 +57,75 @@
 \newpage
 
 \section{Remerciements}
-Je tiens à remercier toutes les personnes qui ont contribué au succès de mon stage et qui m'ont aidé lors de la rédaction de ce rapport.
-
-Tout d'abord, j'adresse mes remerciements à mon professeur, Mr Joseph X de l'Université Y qui m'a beaucoup aidé dans ma recherche de stage et m'a permis de postuler dans cette entreprise. Son écoute et ses conseils m'ont permis de cibler mes candidatures, et de trouver ce stage qui était en totale adéquation avec mes attentes.
-
-Je tiens à remercier vivement mon maitre de stage, Mr Gabriel X, responsable du service Y au sein de l'entreprise F, pour son accueil, le temps passé ensemble et le partage de son expertise au quotidien. Grâce aussi à sa confiance j'ai pu m'accomplir totalement dans mes missions. Il fut d'une aide précieuse dans les moments les plus délicats.
-
-Je remercie également toute l'équipe E pour leur accueil, leur esprit d'équipe et en particulier Mr DDDD, qui m'a beaucoup aidé à comprendre les problématiques d'achats sécurisés...
-
-Enfin, je tiens à remercier toutes les personnes qui m'ont conseillé et relu lors de la rédaction de ce rapport de stage : ma famille, mon amie Julie B camarade de promotion.
+Avant tout développement sur cette expérience professionnelle, il apparaît opportun de commencer ce rapport de stage par des remerciements, à ceux qui m’ont beaucoup appris au cours de ce stage, et même à ceux qui ont eu la gentillesse de faire de ce stage un moment très profitable.
+\newline
+Tout d'abord, j'adresse mes remerciements à ma professeure et amie, Mme Ines Klimann, maître de conférences à l'Université Paris Diderot (Paris 7) qui m'a beaucoup aidé dans ma recherche de stage.
+\newline
+Je tiens à remercier vivement mon maitre de stage, Mr Yann Régis-Gianas, maître de conférences à l'Université Paris Diderot (Paris 7) et responsable de la platforme LearnOCaml au sein de l'IRIF pour son accueil, son enthousiasme et ses conseils avisés. Grâce à sa confiance j'ai pu accomplir mes différentes missions en totale autonomie avec rigueur et efficacité. Il fut d'une aide précieuse dans les moments les plus délicats.
+\newline 
+Je remercie également l'ensemble des employés de l'IRIF et de l'Université Paris Diderot (Paris 7) pour leur accueil, leur gentillesse et leur professionnalisme.
+Enfin, je tiens à remercier toutes les personnes qui m'ont conseillé et aidé lors de mon stage.
 
 
 \newpage
 
 \section{Introduction}
 
-
-En 2060, 90\% des français rouleront dans des véhicules électriques, un chiffre très fort révélé par l'étude "Ma voiture du futur" de xxxx en 201X, et qui en dit long sur les changements futurs dans le domaine de l'automobile.
-
-Dans le cadre de ma Licence XXX à l'Université XXX, j'ai souhaité réaliser mon stage dans une entreprise répondant à ces enjeux du futur en matière de mode de transport et d'écologie... tout en me formant aux métiers de community manager... que j'ai découvert et que ma formation propose comme débouché.... Les missions de xxx et zzz m'ont attiré particulièrement car j'ai un esprit créatif et je souhaitais savoir si ce type de métier pouvait m'intéresser puisque je m'oriente dans ma formation et professionnellement vers le marketing et la communication.
-Aussi l'entreprise française RRRRR, créée très récemment en 2014.... s'est fait connaitre avec succès pour ses produits innovants..., j'ai voulu intégrer ses équipes pour pouvoir découvrir leurs méthodes et principes industriels reconnus sur le marché. Nous verrons ainsi au travers de ce rapport la problématique actuelle du secteur : quels sont les freins et les leviers de l'automobile électrique en ville ?
-
-Dans un premier temps nous décrirons l'entreprise et son secteur en insistant sur ses particularités notamment dans le financement international. Puis nous étudierons mes missions, lors de ce stage avant de dresser un bilan de celui-ci.
+Du 01/06/2019 au 01/09/2019, j’ai effectué un stage au sein de l'Institut de Recherche en Informatique Fondamentale (IRIF\footnote{\label{IRIF} Institut de Recherche en Informatique Fondamentale}). Au cours de ce stage dans l'équipe \begin{math}\pi r^2\end{math}, j’ai pu m’intéresser au développement des méthodes formelles ou mathématiques pour modéliser des systèmes existants, naturels ou artificiels, et pour résoudre des problèmes concrets.
+Plus largement, ce stage a été l’opportunité pour moi d’appréhender l'aspect pratique de tous les metiers liés au développement d'une application de sa conception à sa mise en production des méthodes pour rendre plus sûre et plus efficace la distribution de systèmes logiciels de grande dimension.
+\newline\newline
+Au-delà d’enrichir mes connaissances informatiques, ce stage m’a permis de comprendre énormement de chose sur le travail en équipe, sur les subtilités de la vie en entreprise et m'a donné de nombreuses pistes sur mon orientation après mon Master 2.
+Mon stage au pôle Preuves, Programmes et Systèmes (PPS\footnote{\label{PPS} Preuves, Programmes et Systèmes}) de l'IRIF\ref{IRIF} a consisté essentiellement en l'amélioration de la platforme LearnOCaml et au développement d'applications permettant de faciliter et de simplifier son utilisation.
+Mon maître de stage étant maître de conférences à l'Université Paris Diderot (Paris 7) et membre permanant du pôle PPS\ref{PPS}, j’ai pu apprendre dans d’excellentes conditions à utiliser de nombreux outils mis à disposition par Github et à réaliser un FrontEnd, un BackEnd, une API\footnote{\label{API} Interface de Programmation d’Application ou Interface de Programmation Applicative}, à administrer des serveurs Cloud Openstack et des Nodes Kubernetes aussi bien en local qu'avec OVH.
+\newline\newline
+Ce stage a donc été une opportunité pour moi de percevoir comment les recherches menées à l'IRIF\ref{IRIF} reposent sur l’étude et la compréhension des fondements de toute l’informatique, afin d’apporter des solutions innovantes aux défis actuels et futurs des sciences numériques.
+L’élaboration de ce rapport a pour principale source les différents enseignements tirés de la pratique journalière des tâches auxquelles j’étais affecté.
+\newline\newline
+En vue de rendre compte de manière fidèle et analytique des 2 mois passés au sein de l'IRIF\ref{IRIF}, il apparaît logique de présenter à titre préalable le cadre du stage : l'IRIF\ref{IRIF}, et l’environnement du stage, à savoir le secteur PPS\ref{PPS}. Ensuite, il sera précisé les différentes missions et tâches que j’ai pu effectuer au sein du pôle PPS\ref{PPS}. Enfin les nombreux apports que j’ai pu en tirer.
 
 \newpage
 
 \section{L'IRIF}
 
-\subsection{le secteur d'activité (les concurrents, les besoins des consommateurs)}
+L'Institut de Recherche en Informatique Fondamentale (IRIF) est une unité mixte de recherche (UMR 8243) entre le CNRS et l'université Paris Diderot, qui héberge deux équipes-projets INRIA. Il est issu de la fusion des deux UMR LIAFA et PPS au 1er janvier 2016. L'IRIF est aussi membre de la Fondation Sciences Mathématiques de Paris (FSMP). 
 
-\subsection{l'entreprise (son historique, ses forces / faiblesses, son organisation)}
+\subsection{Présentation}
 
+l’IRIF est reconnu pour ses contributions portant sur la conception et l’analyse d’algorithmes, l’étude des modèles de calculs et de représentation des données, les fondements des langages de programmation, le développement logiciel, la vérification et la certification. L’IRIF effectue aussi une recherche interdisciplinaire mettant à profit sa démarche scientifique.
+\newline\newline
+L’IRIF s'appuie sur des concepts mathématiques développés et étudiés en son sein, notamment en combinatoire, théorie des graphes, logique et algèbre. Ces travaux contribuent aussi directement aux mathématiques, notamment en physique combinatoire, probabilités, catégories, théorie de la preuve, et preuves assistées par ordinateur.
+\newline\newline
+Au CNRS, l'IRIF est principalement rattaché à l'Institut National des Sciences de l'Information et de leurs Interactions (INS2I) et, secondairement, à l'Institut National des Sciences Mathématiques et de leurs Interactions (INSMI). L'IRIF est membre de l'UFR d'informatique de l'université Paris Diderot, et accueille également en son sein plusieurs membres de l'UFR de mathématiques. Enfin, l'IRIF est associé à l'école doctorale des Sciences Mathématiques de Paris Centre (ED 386).
+\newline\newline
+L'IRIF est structuré en neuf équipes thématiques regroupées en trois pôles de recherche :
+	\begin{itemize}
+		\item[$\ast$]Pôle Algorithmes et structures discrètes
+		\item[$\ast$]Pôle Automates, structures et vérification
+		\item[$\ast$]Pôle Preuves, programmes et systèmes
+	\end{itemize}
+L'IRIF compte actuellement une centaine de membres permanents, se répartissant environ en 48 enseignants-chercheurs, 27 chercheurs CNRS, 5 chercheurs INRIA, 8 membres émerites et 7 personnels administratifs ou techniques (en janvier 2019). L'effectif total de l'IRIF, incluant doctorants, postdoctorants, et visiteurs de longue durée s'élève à près de deux cents personnes.
+\newline\newline
+Six membres de l'IRIF ont été lauréats de l'European Research Council (ERC), trois sont membres de l'Institut Universitaire de France (IUF) et deux sont membres de l'Academia Europæa. 
+
+\subsection{PPS}
+
+Thèmes de recherche
+\newline\newline
+Le programme scientifique du pôle Preuves, programmes et systèmes (PPS) de l'IRIF vise à renforcer les fondements théoriques des langages de programmation, des assistants de preuves et, plus généralement, des formalismes de calcul. Ces problématiques sont abordées en croisant trois points de vue complémentaires :
+\begin{itemize}	
+	\item[$\ast$]une approche syntaxique, qui développe des langages théoriques issus de formalismes logiques
+    \item[$\ast$]une approche algébrique, qui étudie les structures mathématiques liées au calcul
+	\item[$\ast$]une approche pratique, qui modélise et analyse des systèmes de calcul réels
+\end{itemize}
+Le pôle est constitué de trois équipes thématiques, correspondant à chacun de ces trois points de vue. Elles développent leurs outils propres, et les mettent ensuite au service d'objectifs scientifiques communs :
+\begin{figure}[h!]
+	\includegraphics[width=\linewidth]{PPS.png}
+	\caption{Diagramme des équipes PPS.}
+\end{figure}
+\newline
+Le pôle PPS héberge l'équipe-projet \begin{math}\pi r^2\end{math} commune à l'INRIA, au CNRS et à l'Université Paris-Diderot — Paris 7, ainsi qu'une partie des membres de l'IRILL (Initiative de Recherche et d'Innovation sur le Logiciel Libre), une structure commune à l'INRIA, à l'Université Paris-Diderot — Paris 7 et à l'Université Pierre-et-Marie-Curie — Paris 6. 
 \newpage
-
-\section{Mon stage}
+\section{Mes missions}
 
 21. 
 22. 
@@ -100,7 +139,7 @@ enseignements/apports du stage (connaissances - compétences)}
 
 \newpage
 
-\section{A trouver}
+\section{Les apports du stage}
 Merci !
 
 \subsection{Subsection}

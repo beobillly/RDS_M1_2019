@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2019.7.17)  17 JUL 2019 18:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2019.7.22)  22 JUL 2019 17:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -213,40 +213,98 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip43
 )
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2018/12/01 v2.17b AMS math features
+\@mathmargin=\skip44
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks16
+\ex@=\dimen120
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen121
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count110
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count111
+\leftroot@=\count112
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count113
+\DOTSCASE@=\count114
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box29
+\strutbox@=\box30
+\big@size=\dimen122
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count115
+\c@MaxMatrixCols=\count116
+\dotsspace@=\muskip11
+\c@parentequation=\count117
+\dspbrk@lvl=\count118
+\tag@help=\toks17
+\row@=\count119
+\column@=\count120
+\maxfields@=\count121
+\andhelp@=\toks18
+\eqnshift@=\dimen123
+\alignsep@=\dimen124
+\tagshift@=\dimen125
+\tagwidth@=\dimen126
+\totwidth@=\dimen127
+\lineht@=\dimen128
+\@envbody=\toks19
+\multlinegap=\skip45
+\multlinetaggap=\skip46
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
+)
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2019/02/27 1.8b listings language file
 )
 (./Rapport de stage.aux)
 \openout1 = `"Rapport de stage.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count110
-\scratchdimen=\dimen120
-\scratchbox=\box29
-\nofMPsegments=\count111
-\nofMParguments=\count112
-\everyMPshowfont=\toks16
-\MPscratchCnt=\count113
-\MPscratchDim=\dimen121
-\MPnumerator=\count114
-\makeMPintoPDFobject=\count115
-\everyMPtoPDFconversion=\toks17
+\scratchcounter=\count122
+\scratchdimen=\dimen129
+\scratchbox=\box31
+\nofMPsegments=\count123
+\nofMParguments=\count124
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count125
+\MPscratchDim=\dimen130
+\MPnumerator=\count126
+\makeMPintoPDFobject=\count127
+\everyMPtoPDFconversion=\toks22
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -268,9 +326,9 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count116
-\AtBeginShipoutBox=\box30
-Package hyperref Info: Link coloring OFF on input line 29.
+\c@lstlisting=\count128
+\AtBeginShipoutBox=\box32
+Package hyperref Info: Link coloring OFF on input line 26.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -278,11 +336,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count117
+\c@section@level=\count129
 )
-LaTeX Info: Redefining \ref on input line 29.
-LaTeX Info: Redefining \pageref on input line 29.
-LaTeX Info: Redefining \nameref on input line 29.
+LaTeX Info: Redefining \ref on input line 26.
+LaTeX Info: Redefining \pageref on input line 26.
+LaTeX Info: Redefining \nameref on input line 26.
 
 (./Rapport de stage.out) (./Rapport de stage.out)
 \@outlinefile=\write3
@@ -291,34 +349,29 @@ LaTeX Info: Redefining \nameref on input line 29.
 <irif_horizontal.png, id=52, 602.25pt x 200.75pt>
 File: irif_horizontal.png Graphic file (type png)
 <use irif_horizontal.png>
-Package pdftex.def Info: irif_horizontal.png  used on input line 33.
+Package pdftex.def Info: irif_horizontal.png  used on input line 30.
 (pdftex.def)             Requested size: 137.9979pt x 45.99998pt.
 <Logo80ANS_OR.png, id=54, 399.4925pt x 280.04625pt>
 File: Logo80ANS_OR.png Graphic file (type png)
 <use Logo80ANS_OR.png>
-Package pdftex.def Info: Logo80ANS_OR.png  used on input line 34.
+Package pdftex.def Info: Logo80ANS_OR.png  used on input line 31.
 (pdftex.def)             Requested size: 137.9979pt x 96.7357pt.
 <logop7.png, id=55, 92.5056pt x 36.135pt>
 File: logop7.png Graphic file (type png)
 <use logop7.png>
-Package pdftex.def Info: logop7.png  used on input line 35.
+Package pdftex.def Info: logop7.png  used on input line 32.
 (pdftex.def)             Requested size: 137.9979pt x 53.90845pt.
 <Universite_Paris_logo_horizontal.jpg, id=56, 389.455pt x 118.4425pt>
 File: Universite_Paris_logo_horizontal.jpg Graphic file (type jpg)
 <use Universite_Paris_logo_horizontal.jpg>
 Package pdftex.def Info: Universite_Paris_logo_horizontal.jpg  used on input li
-ne 36.
+ne 33.
 (pdftex.def)             Requested size: 137.9979pt x 41.96695pt.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./irif_horizontal.png> <./
 Logo80ANS_OR.png> <./logop7.png> <./Universite_Paris_logo_horizontal.jpg>] (./R
-apport de stage.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 4.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 4.
-)
+apport de stage.toc)
 \tf@toc=\write4
 \openout4 = `"Rapport de stage.toc"'.
 
@@ -326,94 +379,171 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.53 \newpage
-              [1]
-Overfull \hbox (14.16725pt too wide) in paragraph at lines 62--63
-\OT1/cmr/m/n/10 et en par-ti-c-ulier Mr DDDD, qui m'a beau-coup aid^^Se ^^Ra co
-m-pren-dre les probl^^Sematiques
+l.57 \newpage
+              [1] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 74--85
+
  []
 
-[2] [3] [4]
-Overfull \hbox (7.05705pt too wide) in paragraph at lines 94--94
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--85
+
+ []
+
+
+Overfull \hbox (4.77826pt too wide) in paragraph at lines 74--85
+\OT1/cmr/m/n/10 Ce stage a donc ^^Set^^Se une op-por-tu-nit^^Se pour moi de per
+cevoir com-ment les recherches
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--85
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 94--101
+
+ []
+
+
+Overfull \hbox (11.63959pt too wide) in paragraph at lines 94--101
+\OT1/cmr/m/n/10 travaux con-tribuent aussi di-recte-ment aux math^^Sematiques, 
+no-tam-ment en physique
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--101
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--101
+
+ []
+
+
+Overfull \hbox (5.74942pt too wide) in paragraph at lines 106--109
+\OT1/cmr/m/n/10 L'IRIF compte actuelle-ment une cen-taine de mem-bres per-ma-ne
+nts, se r^^Separtissant
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--109
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--115
+
+ []
+
+
+Overfull \hbox (3.9172pt too wide) in paragraph at lines 112--115
+\OT1/cmr/m/n/10 Ces probl^^Sematiques sont abord^^Sees en croisant trois points
+ de vue compl^^Sementaires
+ []
+
+[4]
+<PPS.png, id=119, 1029.8475pt x 360.34625pt>
+File: PPS.png Graphic file (type png)
+<use PPS.png>
+Package pdftex.def Info: PPS.png  used on input line 122.
+(pdftex.def)             Requested size: 345.0pt x 120.71262pt.
+ [5 <./PPS.png>]
+Overfull \hbox (7.05705pt too wide) in paragraph at lines 133--133
 []\OT1/cmr/bx/n/12 les mis-sions (re-spon-s-abilit^^Ses, t^aches ^^Ra ef-fectue
 r, dossiers
  []
 
-[5] [6]
-Overfull \hbox (3.94495pt too wide) in paragraph at lines 115--117
+[6] [7]
+Overfull \hbox (3.94495pt too wide) in paragraph at lines 154--156
 \OT1/cmr/m/n/10 charni^^Rere..., et je suis tr^^Res fier d'avoir pu con-tribuer
 , par-ticiper ^^Ra cette r^^Sevolution.
  []
 
-[7]
-<coffee.jpg, id=115, 772.8875pt x 718.685pt>
+[8]
+<coffee.jpg, id=139, 772.8875pt x 718.685pt>
 File: coffee.jpg Graphic file (type jpg)
 <use coffee.jpg>
-Package pdftex.def Info: coffee.jpg  used on input line 128.
+Package pdftex.def Info: coffee.jpg  used on input line 167.
 (pdftex.def)             Requested size: 68.99895pt x 64.15247pt.
 File: coffee.jpg Graphic file (type jpg)
 <use coffee.jpg>
-Package pdftex.def Info: coffee.jpg  used on input line 132.
+Package pdftex.def Info: coffee.jpg  used on input line 171.
 (pdftex.def)             Requested size: 68.99895pt x 64.15247pt.
 File: coffee.jpg Graphic file (type jpg)
 <use coffee.jpg>
-Package pdftex.def Info: coffee.jpg  used on input line 136.
+Package pdftex.def Info: coffee.jpg  used on input line 175.
 (pdftex.def)             Requested size: 68.99895pt x 64.15247pt.
 File: coffee.jpg Graphic file (type jpg)
 <use coffee.jpg>
-Package pdftex.def Info: coffee.jpg  used on input line 140.
+Package pdftex.def Info: coffee.jpg  used on input line 179.
 (pdftex.def)             Requested size: 172.5pt x 160.40312pt.
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 154
-.
-LaTeX Font Info:    No file OMScmss.fd. on input line 154.
 
+
+LaTeX Warning: Citation `WEBSITE:1' on page 9 undefined on input line 189.
+
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 193
+.
+LaTeX Font Info:    No file OMScmss.fd. on input line 193.
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 154.
+(Font)              for symbol `textbraceleft' on input line 193.
 
 
-Overfull \hbox (15.75119pt too wide) in paragraph at lines 154--155
+Overfull \hbox (15.75119pt too wide) in paragraph at lines 193--194
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[8 <./coffee.jpg>] (./Rapport de stage.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 161.
- [9]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 161.
+[9 <./coffee.jpg>] (./Rapport de stage.bbl
+
+LaTeX Warning: Empty `thebibliography' environment on input line 3.
+
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 200.
+ [10]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 200.
  (./Rapport de stage.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 161.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 161.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 200.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 200.
 Package rerunfilecheck Info: File `"Rapport de stage".out' has not changed.
-(rerunfilecheck)             Checksum: 1147573ADBC5B3E638AEF093B7B90791;1042.
+(rerunfilecheck)             Checksum: 7CE8A6B977C8E887C7A58C459881477B;925.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 161.
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 200.
  ) 
 Here is how much of TeX's memory you used:
- 8065 strings out of 494553
- 119996 string characters out of 6177377
- 393954 words of memory out of 5000000
- 11657 multiletter control sequences out of 15000+600000
- 7436 words of font info for 27 fonts, out of 8000000 for 9000
+ 8678 strings out of 494553
+ 126928 string characters out of 6177377
+ 405376 words of memory out of 5000000
+ 12242 multiletter control sequences out of 15000+600000
+ 9995 words of font info for 36 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 42i,8n,40p,659b,1514s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,8n,40p,659b,1526s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmtt10.pfb>
-Output written on "Rapport de stage.pdf" (10 pages, 288819 bytes).
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on "Rapport de stage.pdf" (11 pages, 377406 bytes).
 PDF statistics:
- 180 PDF objects out of 1000 (max. 8388607)
- 149 compressed objects within 2 object streams
- 29 named destinations out of 1000 (max. 500000)
- 122 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 213 PDF objects out of 1000 (max. 8388607)
+ 175 compressed objects within 2 object streams
+ 33 named destinations out of 1000 (max. 500000)
+ 127 words of extra memory for PDF output out of 10000 (max. 10000000)
 
