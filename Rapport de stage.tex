@@ -418,6 +418,18 @@ Techniquement, Docker étend le format de conteneur Linux standard, LXC, avec un
 \end{figure}
 \newpage
 
+\subsubsection{MongoDB}
+\begin{figure}[h!]
+	\centering
+  	\begin{subfigure}[b]{0.55\linewidth}
+	\includegraphics[width=\linewidth]{mongo.png}
+  	\end{subfigure}
+\end{figure}
+
+MongoDB est un système de gestion de base de données orienté documents, répartissable sur un nombre quelconque d'ordinateurs et ne nécessitant pas de schéma prédéfini des données. Il est écrit en C++. Le serveur et les outils sont distribués sous licence SSPL, les pilotes sous licence Apache et la documentation sous licence Creative Commons. Il fait partie de la mouvance NoSQL. 
+\newline
+Il est depuis devenu un des SGBD les plus utilisés, notamment pour les sites web de Craigslist, eBay, Foursquare, SourceForge.net, Viacom, pagesjaunes et le New York Times. 
+
 \subsubsection{Thinkster}
 \begin{figure}[h!]
 	\centering
@@ -425,16 +437,160 @@ Techniquement, Docker étend le format de conteneur Linux standard, LXC, avec un
 	\includegraphics[width=\linewidth]{thinkster.png}
   	\end{subfigure}
 \end{figure}
-\subsubsection{ReadTheDocs}
+
+Thinkster est une société créée en 2013 fournissant des cours et des modèles pour construire des applications complètes à partir de rien en utilsiant les derniers frameworks disponibles.
+\newline
+Sur leur github : https://github.com/gothinkster/realworld , on peut trouver des modèles fonctionnels de FrontEnd et de BackEnd en de nombreux langages. Leurs cours permettent aussi de comprendre en détail les spécifications de leurs solutions et la communauté assez active sur Github met régulièrement leurs solutions au goût du jour.
+
+
 \subsubsection{LearnOCaml}
-\subsubsection{JsOfOCaml}
+
+\begin{figure}[h!]
+	\centering
+  	\begin{subfigure}[b]{0.25\linewidth}
+	\includegraphics[width=\linewidth]{lo.png}
+  	\end{subfigure}
+\end{figure}
+
+Learn-OCaml est une plate-forme d’apprentissage du langage OCaml, proposant un toplevel directement sur le web, un environnement d’exercices, un répertoire de leçons et de didacticiels.
+Learn-OCaml a été écrit par OCamlPro et est sous licence MIT.
+
+\subsubsection{ReadTheDocs}
+\begin{figure}[h!]
+	\centering
+  	\begin{subfigure}[b]{0.55\linewidth}
+	\includegraphics[width=\linewidth]{rtd.png}
+  	\end{subfigure}
+\end{figure}
+
+ReadTheDocs est une énorme ressource sur laquelle des millions de développeurs s'appuient pour la documentation logicielle.
+\newline
+ReadTheDocs est pris en charge par la communauté. Ce sont les utilisateurs qui contribue au développement, au support et aux opérations.
+ReadTheDocs permet de rédiger une documentation à côté de votre code, avec tous les outils nécessaires. La documentation doit être écrite avec reStructuredText ou en Markdown.
+\newline
+À l'aide de webhooks, la documentation est automatiquement mise à jour, quelle que soit la version du logiciel.
+La documentation publiée est hébergée de manière sécurisée et n'est disponible que pour les personnes internes d'une entreprise.
+L'hébergement du projet est gracieusement fourni par Microsoft Azure.
+
+\subsubsection{JsofOCaml}
+
+\begin{figure}[h!]
+	\centering
+  	\begin{subfigure}[b]{0.25\linewidth}
+	\includegraphics[width=\linewidth]{ocs.png}
+  	\end{subfigure}
+\end{figure}
+
+JsofOCaml est un compilateur de programmes de bytecode OCaml vers JavaScript.
+\newline
+JsofOCaml est fournit par Ocsigen, un outil de développement web et mobile, développé par le laboratoire français IRIF et par la société Be Sport SAS, utilisant des solutions nouvelles issues de la recherche sur les langages de programmation.
+\newline
+Il permet d’exécuter des programmes OCaml purs dans un environnement JavaScript tel que les navigateurs et Node.js. Il est facile à installer car il fonctionne avec une installation existante d'OCaml, sans qu'il soit nécessaire de recompiler une bibliothèque. Il est livré avec des liaisons pour une grande partie des API de navigateur. Selon les tests, les programmes générés s'exécutent généralement plus rapidement qu'avec l'interpréteur de bytecodes d'OCaml. Ce compilateur s'avère beaucoup plus facile à maintenir qu'un compilateur OCaml reciblé, car le bytecode fournit une API très stable.
+
 \subsubsection{Langages utilisés}
 
+Pour utiliser ces nombreux outils, une variété de langage était nécessaire, choisit en fonction du style de programmation et leur pertinence.
+\newline
 
+\textbf{TypeScript}
 
+\begin{figure}[h!]
+	\centering
+  	\begin{subfigure}[b]{0.25\linewidth}
+	\includegraphics[width=\linewidth]{type.png}
+  	\end{subfigure}
+\end{figure}
 
+TypeScript est un langage de programmation libre et open source développé par Microsoft qui a pour but d'améliorer et de sécuriser la production de code JavaScript. C'est un sur-ensemble de JavaScript (c'est-à-dire que tout code JavaScript correct peut être utilisé avec TypeScript). Le code TypeScript est transcompilé en JavaScript, et peut ainsi être interprété par n'importe quel navigateur web ou moteur JavaScript. TypeScript a été cocréé par Anders Hejlsberg, principal inventeur de C\#.
+\newline
 
+\textbf{JavaScript}
+\newline
 
+\begin{figure}[h!]
+	\centering
+  	\begin{subfigure}[b]{0.15\linewidth}
+	\includegraphics[width=\linewidth]{js.png}
+  	\end{subfigure}
+\end{figure}
+
+JavaScript est un langage de programmation de scripts principalement employé dans les pages web interactives mais aussi pour les serveurs avec l'utilisation (par exemple) de Node.js. C'est un langage orienté objet à prototype, c'est-à-dire que les bases du langage et ses principales interfaces sont fournies par des objets qui ne sont pas des instances de classes, mais qui sont chacun équipés de constructeurs permettant de créer leurs propriétés, et notamment une propriété de prototypage qui permet d'en créer des objets héritiers personnalisés. En outre, les fonctions sont des objets de première classe. Le langage supporte le paradigme objet, impératif et fonctionnel. JavaScript est le langage possédant le plus large écosystème grâce à son gestionnaire de dépendances npm, avec environ 500 000 paquets en août 2017.
+
+\newpage
+\textbf{OCaml}
+\newline
+\begin{figure}[h!]
+	\centering
+  	\begin{subfigure}[b]{0.25\linewidth}
+	\includegraphics[width=\linewidth]{ocamlm.png}
+  	\end{subfigure}
+\end{figure}
+
+OCaml, anciennement connu sous le nom d'Objective Caml, est l'implémentation la plus avancée du langage de programmation Caml, créé par Xavier Leroy, Jérôme Vouillon, Damien Doligez, Didier Rémy et leurs collaborateurs en 1996. Ce langage, de la famille des langages ML, est un projet open source dirigé et maintenu essentiellement par l'Inria.
+\newline
+
+\textbf{Html}
+\newline
+\begin{figure}[h!]
+	\centering
+  	\begin{subfigure}[b]{0.15\linewidth}
+	\includegraphics[width=\linewidth]{html5.png}
+  	\end{subfigure}
+\end{figure}
+
+L’HyperText Markup Language, généralement abrégé HTML, est le langage de balisage conçu pour représenter les pages web. C’est un langage permettant d’écrire de l’hypertexte, d’où son nom. HTML permet également de structurer sémantiquement et logiquement et de mettre en forme le contenu des pages, d’inclure des ressources multimédias dont des images, des formulaires de saisie et des programmes informatiques. Il permet de créer des documents interopérables avec des équipements très variés de manière conforme aux exigences de l’accessibilité du web. Il est souvent utilisé conjointement avec le langage de programmation JavaScript et des feuilles de style en cascade (CSS). HTML est inspiré du Standard Generalized Markup Language (SGML). Il s'agit d'un format ouvert. 
+\newline
+
+\textbf{Css}
+\newline
+\begin{figure}[h!]
+	\centering
+  	\begin{subfigure}[b]{0.1\linewidth}
+	\includegraphics[width=\linewidth]{css.png}
+  	\end{subfigure}
+\end{figure}
+
+Les feuilles de style en cascade1, généralement appelées CSS de l'anglais Cascading Style Sheets, forment un langage informatique qui décrit la présentation des documents HTML et XML. Les standards définissant CSS sont publiés par le World Wide Web Consortium (W3C). Introduit au milieu des années 1990, CSS devient couramment utilisé dans la conception de sites web et bien pris en charge par les navigateurs web dans les années 2000.
+\newline
+\textbf{Markdown}
+\newline
+\begin{figure}[h!]
+	\centering
+  	\begin{subfigure}[b]{0.25\linewidth}
+	\includegraphics[width=\linewidth]{mark.png}
+  	\end{subfigure}
+\end{figure}
+
+Markdown est un langage de balisage léger créé en 2004 par John Gruber avec Aaron Swartz. Son but est d'offrir une syntaxe facile à lire et à écrire. Un document balisé par Markdown peut être lu en l'état sans donner l’impression d'avoir été balisé ou formaté par des instructions particulières.
+\newline
+Un document balisé par Markdown peut être converti en HTML, en PDF ou en autres formats. Bien que la syntaxe Markdown ait été influencée par plusieurs filtres de conversion de texte existants vers HTML dont Setext, atx, Textile, reStructuredText, Grutatext et EtText, la source d’inspiration principale est le format du courrier électronique en mode texte. 
+\newline
+
+\textbf{LaTeX}
+\newline
+\begin{figure}[h!]
+	\centering
+  	\begin{subfigure}[b]{0.25\linewidth}
+	\includegraphics[width=\linewidth]{laTeX.png}
+  	\end{subfigure}
+\end{figure}
+
+LaTeX est un langage et un système de composition de documents créé par Leslie Lamport en 1983. Il s'agit d'une collection de macro-commandes destinées à faciliter l'utilisation du processeur de texte TeX de Donald Knuth. Depuis 1993, il est maintenu par le LaTeX3 Project team. Le nom est l'abréviation de Lamport TeX. L'utilisation de LaTeX pour les formules mathématiques est très répandue.
+\newline
+Du fait de sa relative simplicité, il est devenu le langage privilégié pour les documents scientifiques employant TeX. Il est particulièrement utilisé dans les domaines techniques et scientifiques pour la production de documents de taille moyenne ou importante (thèse ou livre, par exemple). Néanmoins, il peut être aussi employé pour générer des documents de types variés (par exemple, des lettres, des transparents ou encore au hasard des rapports de stage...).
+\newpage
+\textbf{Bash}
+\newline
+\begin{figure}[h!]
+	\centering
+  	\begin{subfigure}[b]{0.25\linewidth}
+	\includegraphics[width=\linewidth]{bash.png}
+  	\end{subfigure}
+\end{figure}
+
+Bash (acronyme de Bourne-Again shell) est un interpréteur en ligne de commande de type script. C'est le shell Unix du projet GNU.
+\newline
+Fondé sur le Bourne shell, Bash lui apporte de nombreuses améliorations, provenant notamment du Korn shell et du C shell. Bash est un logiciel libre publié sous licence publique générale GNU. Il est l'interprète par défaut sur de nombreux Unix libres, notamment sur les systèmes GNU/Linux.
 
 \subsection{les missions (responsabilités, tâches à effectuer, dossiers confiés, objectifs)}
 

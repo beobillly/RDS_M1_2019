@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2019.7.22)  24 JUL 2019 17:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2019.7.22)  25 JUL 2019 13:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -346,22 +346,22 @@ LaTeX Info: Redefining \nameref on input line 26.
 \@outlinefile=\write3
 \openout3 = `"Rapport de stage.out"'.
 
-<irif_horizontal.png, id=124, 602.25pt x 200.75pt>
+<irif_horizontal.png, id=128, 602.25pt x 200.75pt>
 File: irif_horizontal.png Graphic file (type png)
 <use irif_horizontal.png>
 Package pdftex.def Info: irif_horizontal.png  used on input line 30.
 (pdftex.def)             Requested size: 137.9979pt x 45.99998pt.
-<Logo80ANS_OR.png, id=126, 399.4925pt x 280.04625pt>
+<Logo80ANS_OR.png, id=130, 399.4925pt x 280.04625pt>
 File: Logo80ANS_OR.png Graphic file (type png)
 <use Logo80ANS_OR.png>
 Package pdftex.def Info: Logo80ANS_OR.png  used on input line 31.
 (pdftex.def)             Requested size: 137.9979pt x 96.7357pt.
-<logop7.png, id=127, 92.5056pt x 36.135pt>
+<logop7.png, id=131, 92.5056pt x 36.135pt>
 File: logop7.png Graphic file (type png)
 <use logop7.png>
 Package pdftex.def Info: logop7.png  used on input line 32.
 (pdftex.def)             Requested size: 137.9979pt x 53.90845pt.
-<Universite_Paris_logo_horizontal.jpg, id=128, 389.455pt x 118.4425pt>
+<Universite_Paris_logo_horizontal.jpg, id=132, 389.455pt x 118.4425pt>
 File: Universite_Paris_logo_horizontal.jpg Graphic file (type jpg)
 <use Universite_Paris_logo_horizontal.jpg>
 Package pdftex.def Info: Universite_Paris_logo_horizontal.jpg  used on input li
@@ -445,24 +445,24 @@ Overfull \hbox (3.9172pt too wide) in paragraph at lines 112--115
  []
 
 [4]
-<PPS.png, id=210, 1029.8475pt x 360.34625pt>
+<PPS.png, id=215, 1029.8475pt x 360.34625pt>
 File: PPS.png Graphic file (type png)
 <use PPS.png>
 Package pdftex.def Info: PPS.png  used on input line 122.
 (pdftex.def)             Requested size: 345.0pt x 120.71262pt.
  [5 <./PPS.png>]
-<Parrot.png, id=217, 676.5275pt x 641.39626pt>
+<Parrot.png, id=222, 676.5275pt x 641.39626pt>
 File: Parrot.png Graphic file (type png)
 <use Parrot.png>
 Package pdftex.def Info: Parrot.png  used on input line 146.
 (pdftex.def)             Requested size: 68.99895pt x 65.41568pt.
  [6 <./Parrot.png>]
-<github.png, id=225, 903.375pt x 451.6875pt>
+<github.png, id=230, 903.375pt x 451.6875pt>
 File: github.png Graphic file (type png)
 <use github.png>
 Package pdftex.def Info: github.png  used on input line 156.
 (pdftex.def)             Requested size: 137.9979pt x 68.99768pt.
-<githubc.jpeg, id=226, 1927.2pt x 1084.05pt>
+<githubc.jpeg, id=231, 1927.2pt x 1084.05pt>
 File: githubc.jpeg Graphic file (type jpg)
 <use githubc.jpeg>
 Package pdftex.def Info: githubc.jpeg  used on input line 159.
@@ -473,12 +473,12 @@ Overfull \hbox (14.15794pt too wide) in paragraph at lines 163--166
 vice web d'h^^Sebergement
  []
 
-<githubf.png, id=227, 1003.75pt x 532.99126pt>
+<githubf.png, id=232, 1003.75pt x 532.99126pt>
 File: githubf.png Graphic file (type png)
 <use githubf.png>
 Package pdftex.def Info: githubf.png  used on input line 170.
 (pdftex.def)             Requested size: 234.59747pt x 124.56981pt.
-<gitf.png, id=228, 1003.75pt x 701.62125pt>
+<gitf.png, id=233, 1003.75pt x 701.62125pt>
 File: gitf.png Graphic file (type png)
 <use gitf.png>
 Package pdftex.def Info: gitf.png  used on input line 174.
@@ -489,52 +489,52 @@ Underfull \hbox (badness 4686) in paragraph at lines 175--175
  []
 
 [7 <./github.png> <./githubc.jpeg> <./githubf.png> <./gitf.png (PNG copy)>]
-<studio.png, id=238, 1027.84pt x 1027.84pt>
+<studio.png, id=243, 1027.84pt x 1027.84pt>
 File: studio.png Graphic file (type png)
 <use studio.png>
 Package pdftex.def Info: studio.png  used on input line 185.
 (pdftex.def)             Requested size: 34.5021pt x 34.48813pt.
-<Node.png, id=239, 1927.2pt x 1179.40625pt>
+<Node.png, id=244, 1927.2pt x 1179.40625pt>
 File: Node.png Graphic file (type png)
 <use Node.png>
 Package pdftex.def Info: Node.png  used on input line 196.
 (pdftex.def)             Requested size: 68.99895pt x 42.21924pt.
-<npm.png, id=240, 1927.2pt x 749.80125pt>
+<npm.png, id=245, 1927.2pt x 749.80125pt>
 File: npm.png Graphic file (type png)
 <use npm.png>
 Package pdftex.def Info: npm.png  used on input line 212.
 (pdftex.def)             Requested size: 68.99895pt x 26.84065pt.
 
 [8 <./studio.png> <./Node.png> <./npm.png>]
-<yarn.png, id=251, 401.5pt x 401.5pt>
+<yarn.png, id=256, 401.5pt x 401.5pt>
 File: yarn.png Graphic file (type png)
 <use yarn.png>
 Package pdftex.def Info: yarn.png  used on input line 223.
 (pdftex.def)             Requested size: 68.99895pt x 68.99538pt.
-<Express.jpeg, id=252, 1284.8pt x 722.7pt>
+<Express.jpeg, id=257, 1284.8pt x 722.7pt>
 File: Express.jpeg Graphic file (type jpg)
 <use Express.jpeg>
 Package pdftex.def Info: Express.jpeg  used on input line 236.
 (pdftex.def)             Requested size: 137.9979pt x 77.62256pt.
  [9 <./yarn.png> <./Express.jpeg>]
-<Angular.jpeg, id=260, 1174.3875pt x 702.625pt>
+<Angular.jpeg, id=265, 1174.3875pt x 702.625pt>
 File: Angular.jpeg Graphic file (type jpg)
 <use Angular.jpeg>
 Package pdftex.def Info: Angular.jpeg  used on input line 248.
 (pdftex.def)             Requested size: 137.9979pt x 82.55309pt.
-<Angularf.png, id=261, 841.1425pt x 427.5975pt>
+<Angularf.png, id=266, 841.1425pt x 427.5975pt>
 File: Angularf.png Graphic file (type png)
 <use Angularf.png>
 Package pdftex.def Info: Angularf.png  used on input line 257.
 (pdftex.def)             Requested size: 310.4979pt x 157.84322pt.
 
 [10 <./Angular.jpeg> <./Angularf.png>]
-<kube.png, id=269, 1927.2pt x 340.27126pt>
+<kube.png, id=274, 1927.2pt x 340.27126pt>
 File: kube.png Graphic file (type png)
 <use kube.png>
 Package pdftex.def Info: kube.png  used on input line 267.
 (pdftex.def)             Requested size: 137.9979pt x 24.36139pt.
-<kubernetes.png, id=270, 893.3375pt x 632.3625pt>
+<kubernetes.png, id=275, 893.3375pt x 632.3625pt>
 File: kubernetes.png Graphic file (type png)
 <use kubernetes.png>
 Package pdftex.def Info: kubernetes.png  used on input line 276.
@@ -645,7 +645,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 283--339
  []
 
 [12] [13]
-<open.png, id=288, 1927.2pt x 930.47626pt>
+<open.png, id=293, 1927.2pt x 930.47626pt>
 File: open.png Graphic file (type png)
 <use open.png>
 Package pdftex.def Info: open.png  used on input line 345.
@@ -656,7 +656,7 @@ Overfull \hbox (8.80624pt too wide) in paragraph at lines 349--354
 an-i-sa-tion non-commerciale
  []
 
-<openstack.png, id=289, 862.22125pt x 784.9325pt>
+<openstack.png, id=294, 862.22125pt x 784.9325pt>
 File: openstack.png Graphic file (type png)
 <use openstack.png>
 Package pdftex.def Info: openstack.png  used on input line 358.
@@ -666,7 +666,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 363--367
 
  []
 
-<swift.jpeg, id=298, 730.73pt x 548.0475pt>
+<swift.jpeg, id=303, 730.73pt x 548.0475pt>
 File: swift.jpeg Graphic file (type jpg)
 <use swift.jpeg>
 Package pdftex.def Info: swift.jpeg  used on input line 371.
@@ -676,100 +676,223 @@ Underfull \hbox (badness 10000) in paragraph at lines 381--383
 
  []
 
-<cinder.png, id=305, 937.5025pt x 477.785pt>
+<cinder.png, id=310, 937.5025pt x 477.785pt>
 File: cinder.png Graphic file (type png)
 <use cinder.png>
 Package pdftex.def Info: cinder.png  used on input line 387.
 (pdftex.def)             Requested size: 345.0pt x 175.82263pt.
 [16 <./cinder.png>]
-<docker.png, id=311, 1927.2pt x 457.71pt>
+<docker.png, id=316, 1927.2pt x 457.71pt>
 File: docker.png Graphic file (type png)
 <use docker.png>
 Package pdftex.def Info: docker.png  used on input line 402.
 (pdftex.def)             Requested size: 345.0pt x 81.93726pt.
-<dockeri.png, id=312, 1027.84pt x 947.54pt>
+<dockeri.png, id=317, 1027.84pt x 947.54pt>
 File: dockeri.png Graphic file (type png)
 <use dockeri.png>
 Package pdftex.def Info: dockeri.png  used on input line 415.
 (pdftex.def)             Requested size: 189.75105pt x 174.91623pt.
  [17 <./docker.png> <./dockeri.png>]
-<thinkster.png, id=322, 422.57875pt x 100.375pt>
+<mongo.png, id=327, 1927.2pt x 522.95375pt>
+File: mongo.png Graphic file (type png)
+<use mongo.png>
+Package pdftex.def Info: mongo.png  used on input line 425.
+(pdftex.def)             Requested size: 189.75105pt x 51.48451pt.
+<thinkster.png, id=328, 422.57875pt x 100.375pt>
 File: thinkster.png Graphic file (type png)
 <use thinkster.png>
-Package pdftex.def Info: thinkster.png  used on input line 425.
+Package pdftex.def Info: thinkster.png  used on input line 437.
 (pdftex.def)             Requested size: 189.75105pt x 45.07182pt.
+<lo.png, id=329, 202.356pt x 159.797pt>
+File: lo.png Graphic file (type png)
+<use lo.png>
+Package pdftex.def Info: lo.png  used on input line 451.
+(pdftex.def)             Requested size: 86.25pt x 68.1091pt.
+<rtd.png, id=330, 401.5pt x 77.088pt>
+File: rtd.png Graphic file (type png)
+<use rtd.png>
+Package pdftex.def Info: rtd.png  used on input line 462.
+(pdftex.def)             Requested size: 189.75105pt x 36.4325pt.
+ [18 <./mongo.png> <./thinkster.png> <./lo.png>]
+Overfull \hbox (13.08379pt too wide) in paragraph at lines 466--474
+[]\OT1/cmr/m/n/10 ReadTheDocs est une ^^Senorme ressource sur laque-lle des mil
+-lions de d^^Seveloppeurs
+ []
 
-Overfull \hbox (7.05705pt too wide) in paragraph at lines 439--439
+<ocs.png, id=342, 43.362pt x 36.3759pt>
+File: ocs.png Graphic file (type png)
+<use ocs.png>
+Package pdftex.def Info: ocs.png  used on input line 480.
+(pdftex.def)             Requested size: 86.25pt x 72.35805pt.
+
+Overfull \hbox (17.77843pt too wide) in paragraph at lines 484--489
+\OT1/cmr/m/n/10 Il per-met d'ex^^Secuter des pro-grammes OCaml purs dans un en-
+vi-ron-nement JavaScript
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 492--494
+
+ []
+
+[19 <./rtd.png> <./ocs.png>]
+<type.png, id=351, 39.10715pt x 9.54214pt>
+File: type.png Graphic file (type png)
+<use type.png>
+Package pdftex.def Info: type.png  used on input line 500.
+(pdftex.def)             Requested size: 86.25pt x 21.04779pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 504--506
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--509
+
+ []
+
+<js.png, id=352, 1027.84pt x 1027.84pt>
+File: js.png Graphic file (type png)
+<use js.png>
+Package pdftex.def Info: js.png  used on input line 513.
+(pdftex.def)             Requested size: 51.7479pt x 51.74004pt.
+
+Overfull \hbox (2.38937pt too wide) in paragraph at lines 517--518
+\OT1/cmr/m/n/10 ploy^^Se dans les pages web in-ter-ac-tives mais aussi pour les
+ serveurs avec l'utilisation
+ []
+
+[20 <./type.png> <./js.png>]
+<ocamlm.png, id=360, 1927.2pt x 528.97626pt>
+File: ocamlm.png Graphic file (type png)
+<use ocamlm.png>
+Package pdftex.def Info: ocamlm.png  used on input line 525.
+(pdftex.def)             Requested size: 86.25pt x 23.67375pt.
+
+Overfull \hbox (16.72287pt too wide) in paragraph at lines 529--531
+[]\OT1/cmr/m/n/10 OCaml, an-ci-en-nement connu sous le nom d'Objective Caml, es
+t l'impl^^Sementation
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 529--531
+
+ []
+
+<html5.png, id=361, 1027.84pt x 1027.84pt>
+File: html5.png Graphic file (type png)
+<use html5.png>
+Package pdftex.def Info: html5.png  used on input line 537.
+(pdftex.def)             Requested size: 51.7479pt x 51.74004pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 541--543
+
+ []
+
+<css.png, id=362, 803.0pt x 1132.23pt>
+File: css.png Graphic file (type png)
+<use css.png>
+Package pdftex.def Info: css.png  used on input line 549.
+(pdftex.def)             Requested size: 34.5021pt x 48.6331pt.
+<mark.png, id=363, 1927.2pt x 1186.4325pt>
+File: mark.png Graphic file (type png)
+<use mark.png>
+Package pdftex.def Info: mark.png  used on input line 560.
+(pdftex.def)             Requested size: 86.25pt x 53.0975pt.
+[21 <./ocamlm.png> <./html5.png> <./css.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 564--568
+
+ []
+
+<laTeX.png, id=374, 1927.2pt x 803.0pt>
+File: laTeX.png Graphic file (type png)
+<use laTeX.png>
+Package pdftex.def Info: laTeX.png  used on input line 574.
+(pdftex.def)             Requested size: 86.25pt x 35.9374pt.
+[22 <./mark.png> <./LaTeX.png>]
+<bash.png, id=383, 1927.2pt x 812.03375pt>
+File: bash.png Graphic file (type png)
+<use bash.png>
+Package pdftex.def Info: bash.png  used on input line 587.
+(pdftex.def)             Requested size: 86.25pt x 36.34169pt.
+
+Overfull \hbox (11.91731pt too wide) in paragraph at lines 591--594
+\OT1/cmr/m/n/10 Fond^^Se sur le Bourne shell, Bash lui ap-porte de nom-breuses 
+am^^Seliorations, provenant
+ []
+
+
+Overfull \hbox (7.05705pt too wide) in paragraph at lines 595--595
 []\OT1/cmr/bx/n/12 les mis-sions (re-spon-s-abilit^^Ses, t^aches ^^Ra ef-fectue
 r, dossiers
  []
 
-[18 <./thinkster.png>] [19]
-Overfull \hbox (3.94495pt too wide) in paragraph at lines 460--462
+[23 <./bash.png>] [24]
+Overfull \hbox (3.94495pt too wide) in paragraph at lines 616--618
 \OT1/cmr/m/n/10 charni^^Rere..., et je suis tr^^Res fier d'avoir pu con-tribuer
 , par-ticiper ^^Ra cette r^^Sevolution.
  []
 
-[20]
-<coffee.jpg, id=338, 772.8875pt x 718.685pt>
+[25]
+<coffee.jpg, id=399, 772.8875pt x 718.685pt>
 File: coffee.jpg Graphic file (type jpg)
 <use coffee.jpg>
-Package pdftex.def Info: coffee.jpg  used on input line 473.
+Package pdftex.def Info: coffee.jpg  used on input line 629.
 (pdftex.def)             Requested size: 68.99895pt x 64.15247pt.
 File: coffee.jpg Graphic file (type jpg)
 <use coffee.jpg>
-Package pdftex.def Info: coffee.jpg  used on input line 477.
+Package pdftex.def Info: coffee.jpg  used on input line 633.
 (pdftex.def)             Requested size: 68.99895pt x 64.15247pt.
 File: coffee.jpg Graphic file (type jpg)
 <use coffee.jpg>
-Package pdftex.def Info: coffee.jpg  used on input line 481.
+Package pdftex.def Info: coffee.jpg  used on input line 637.
 (pdftex.def)             Requested size: 68.99895pt x 64.15247pt.
 File: coffee.jpg Graphic file (type jpg)
 <use coffee.jpg>
-Package pdftex.def Info: coffee.jpg  used on input line 485.
+Package pdftex.def Info: coffee.jpg  used on input line 641.
 (pdftex.def)             Requested size: 172.5pt x 160.40312pt.
 
 
-LaTeX Warning: Citation `WEBSITE:1' on page 21 undefined on input line 495.
+LaTeX Warning: Citation `WEBSITE:1' on page 26 undefined on input line 651.
 
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 499
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 655
 .
-LaTeX Font Info:    No file OMScmss.fd. on input line 499.
+LaTeX Font Info:    No file OMScmss.fd. on input line 655.
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 499.
+(Font)              for symbol `textbraceleft' on input line 655.
 
 
-Overfull \hbox (15.75119pt too wide) in paragraph at lines 499--500
+Overfull \hbox (15.75119pt too wide) in paragraph at lines 655--656
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[21 <./coffee.jpg>] (./Rapport de stage.bbl
+[26 <./coffee.jpg>] (./Rapport de stage.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 509.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 665.
 
-Overfull \hbox (230.8623pt too wide) in paragraph at lines 506--509
+Overfull \hbox (230.8623pt too wide) in paragraph at lines 662--665
 \OT1/cmr/m/n/10 http://www.slideshare.net/reidrac/deploying-openstack-object-st
 orage-swift https://cloudarchitectmusings.com/2013/11/18/laying-
  []
 
 
-Overfull \hbox (207.69547pt too wide) in paragraph at lines 506--509
+Overfull \hbox (207.69547pt too wide) in paragraph at lines 662--665
 \OT1/cmr/m/n/10 cinder-block-volumes-in-openstack-part-1-the-basics/ https://ww
 w.aquasec.com/wiki/display/containers/Docker+Architecture 
  []
 
-[22]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 509.
+[27]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 665.
  (./Rapport de stage.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 509.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 509.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 665.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 665.
 Package rerunfilecheck Info: File `"Rapport de stage".out' has not changed.
-(rerunfilecheck)             Checksum: 233A6A0218E8FEC76242D0E1C64EDFE0;2211.
+(rerunfilecheck)             Checksum: 8F106C038013A39E3A583CCBB35CAD98;2279.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -777,16 +900,16 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 509.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 665.
  ) 
 Here is how much of TeX's memory you used:
- 8855 strings out of 494553
- 129578 string characters out of 6177377
+ 8934 strings out of 494553
+ 130561 string characters out of 6177377
  406376 words of memory out of 5000000
- 12347 multiletter control sequences out of 15000+600000
+ 12397 multiletter control sequences out of 15000+600000
  10341 words of font info for 37 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 42i,9n,40p,719b,1526s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,9n,40p,881b,1526s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
@@ -801,10 +924,10 @@ pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "Rapport de stage.pdf" (23 pages, 1418818 bytes).
+Output written on "Rapport de stage.pdf" (28 pages, 1806120 bytes).
 PDF statistics:
- 425 PDF objects out of 1000 (max. 8388607)
- 336 compressed objects within 4 object streams
- 82 named destinations out of 1000 (max. 500000)
- 376 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 489 PDF objects out of 1000 (max. 8388607)
+ 372 compressed objects within 4 object streams
+ 100 named destinations out of 1000 (max. 500000)
+ 444 words of extra memory for PDF output out of 10000 (max. 10000000)
 
