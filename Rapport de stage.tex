@@ -239,7 +239,19 @@ Yarn est nous vient des équipes d'ingénieurs de Facebook avec la participation
 
 Express est une infrastructure d'applications Web Node.js minimaliste et flexible qui fournit un ensemble de fonctionnalités robuste pour les applications Web et mobiles.
 Grâce à une foule de méthodes utilitaires HTTP et de middleware, la création d'une API robuste est simple et rapide. 
-\newpage
+
+
+\subsubsection{Bootstrap}
+
+\begin{figure}[h!]
+	\centering
+  	\begin{subfigure}[b]{0.2\linewidth}
+	\includegraphics[width=\linewidth]{boot.png}
+  	\end{subfigure}
+\end{figure}
+
+Bootstrap est une collection d'outils utiles à la création du design (graphisme, animation et interactions avec la page dans le navigateur, etc.) de sites et d'applications web. C'est un ensemble qui contient des codes HTML et CSS, des formulaires, boutons, outils de navigation et autres éléments interactifs, ainsi que des extensions JavaScript en option. C'est l'un des projets les plus populaires sur la plate-forme de gestion de développement GitHub.
+
 \subsubsection{Angular}
 
 \begin{figure}[h!]
@@ -550,7 +562,7 @@ L’HyperText Markup Language, généralement abrégé HTML, est le langage de b
   	\end{subfigure}
 \end{figure}
 
-Les feuilles de style en cascade1, généralement appelées CSS de l'anglais Cascading Style Sheets, forment un langage informatique qui décrit la présentation des documents HTML et XML. Les standards définissant CSS sont publiés par le World Wide Web Consortium (W3C). Introduit au milieu des années 1990, CSS devient couramment utilisé dans la conception de sites web et bien pris en charge par les navigateurs web dans les années 2000.
+Les feuilles de style en cascade, généralement appelées CSS de l'anglais Cascading Style Sheets, forment un langage informatique qui décrit la présentation des documents HTML et XML. Les standards définissant CSS sont publiés par le World Wide Web Consortium (W3C). Introduit au milieu des années 1990, CSS devient couramment utilisé dans la conception de sites web et bien pris en charge par les navigateurs web dans les années 2000.
 \newline
 \textbf{Markdown}
 \newline
@@ -589,10 +601,259 @@ Du fait de sa relative simplicité, il est devenu le langage privilégié pour l
 \end{figure}
 
 Bash (acronyme de Bourne-Again shell) est un interpréteur en ligne de commande de type script. C'est le shell Unix du projet GNU.
-\newline
 Fondé sur le Bourne shell, Bash lui apporte de nombreuses améliorations, provenant notamment du Korn shell et du C shell. Bash est un logiciel libre publié sous licence publique générale GNU. Il est l'interprète par défaut sur de nombreux Unix libres, notamment sur les systèmes GNU/Linux.
+\newline
 
-\subsection{les missions (responsabilités, tâches à effectuer, dossiers confiés, objectifs)}
+\textbf{JSON}
+\newline
+\begin{figure}[h!]
+	\centering
+  	\begin{subfigure}[b]{0.2\linewidth}
+	\includegraphics[width=\linewidth]{json.png}
+  	\end{subfigure}
+\end{figure}
+
+JavaScript Object Notation (JSON) est un format de données textuelles dérivé de la notation des objets du langage JavaScript. Il permet de représenter de l’information structurée comme le permet XML par exemple. Créé par Douglas Crockford entre 2002 et 2005, il est actuellement décrit par deux normes en concurrence : RFC 8259 de l’IETF et ECMA-404 de l'ECMA.
+\newline
+
+
+\newpage
+
+\subsection{Les missions}
+
+Différentes missions m'ont été confiées durant mon stage toute avec le même but : améliorer le fonctionnement de LearnOCaml.
+Nous organiserons mes missions de deux manières bien distinctes : ma mission principale et mes missions secondaires.
+Il serait judicieux avant de rentrer dans les détails de mes missions de vous expliquer le fonctionnement de LearnOCaml et de Learn-OCaml-Essok.
+
+\subsubsection{LearnOCaml}
+
+Comme dit à la section qui porte le même nom des outils mis à ma disposition, LearnOCaml ou Learn-OCaml est une plate-forme d’apprentissage du langage OCaml.
+LearnOCaml est à destination des enseignants dans le supérieur du monde entier. La platforme est développée en anglais. L'idée est que chaque enseignant possède son instance de LearnOCaml qu'il pourra personnaliser en fonction de ses besoins.
+\newline
+LearnOCaml fonctionne avec des instances, ie chaque personne voulant utiliser ce logiciel doit avoir son propre serveur. Chaque serveur est indépendant des autres sur son contenu, seule sa structure de base - son squelette - est identique.
+\newline
+Un enseignant peut écrire des exercices en OCaml à destination de ses étudiants et les ajouter à son instance de LearnOCaml. Les étudiants pourront alors y accéder et tenter de les résoudre, ce qui est complètement automatique, pour obtenir une note sur l'exercice avec des conseils pour s'améliorer.
+\newline
+Un enseignant peut aussi récupérer des exercices déjà tout fait sur des plateformes mise à disposition sur Internet pour économiser du temps.
+\newline
+Les forces de ce projet sont équitablement réparties : chaque enseignant pourra obtenir une note pertinente sur le travail de ses étudiants tout le long d'une année scolaire sans avoir à corriger un nombre incalculable de copie et chaque étudiant pourra rapidement voir sa progression dans l'apprentissage du langage OCaml avec un outil moderne et adapté à ses besoins.
+
+\subsubsection{Learn-OCaml-Essok}
+
+Learn-OCaml-Essok ou LearnOCamlEssok est un projet qui à pour objectif de gérer facilement et automatiquement toutes les instances de LearnOCaml à travers le monde.
+\newline
+Pour se faire, le projet se découpe en plusieurs parties :
+\newline
+\newline
+- le FrontEnd qui est une ihm (interface homme machine, ie un site web), sur lequel les enseignants pourront "gérer" leurs instances de LearnOCaml.
+\newline
+\newline
+- le BackEnd qui regroupe une API pour dialoguer avec le FrontEnd, des clients pour les différents services utilisés et une base de donnée.
+\newline
+\newline
+Ici le BackEnd qualifie tous les services invisibles à l'utilisateur qui permettent le bon fonctionnement du FrontEnd.
+\newpage
+\subsubsection{Objectif principal : développer LearnOCamlEssok}
+\textbf{Présentation}
+\newline
+\newline
+Ma mission principale était, à l'origine, de réaliser le FrontEnd pour Learn-OCaml-Essok.
+J'ai opté pour TypeScript comme langage de programmation et Angular 8 comme framework pour le dévélopper.
+\newline
+\newline
+Rapidement, je me suis rendu compte que j'avais besoin du BackEnd pour réaliser des tests. J'ai alors commencé le développement du BackEnd.
+Le problème était mon manque de connaissances sur le sujet, je n'avais aucune idée de comment faire une application complète tout seul et à partir de rien. Pour palier à ce problème, je me suis dirigé vers des solutions basiques et gratuites toutes prêtes disponibles sur github.
+\newline
+\newline
+Thinkster a été d'un grand secours car il proposait exactement ce dont j'avais besoin : des FrontEnd et des BackEnd communiquant entre eux de manière fonctionnelle et sécurisée, le code étant sous licence MIT \footnote{\label{MIT} Massachusetts Institute of Technology, la licence donne à toute personne recevant le logiciel (et ses fichiers) le droit illimité de l'utiliser, le copier, le modifier, le fusionner, le publier, le distribuer, le vendre et le "sous-licencier" (l'incorporer dans une autre licence). La seule obligation est d'incorporer la notice de licence et de copyright dans toutes les copies.}.
+\newline
+Thinkster propose des solutions dans un pannel de langages différents et par continuité vis à vis de mon travail déjà effectué j'ai choisi un FrontEnd en Angular et un Backend en JavaScript.
+\newline
+\newline
+Bien évidemment, les solutions proposées par Thinkster ne répondent pas aux spécifications de Learn-OCaml-Essok et sont justes mises à disposition pour créer une base communiquante entre un FrontEnd et un BackEnd. Heureusement c'est tout ce qu'il me fallait pour démarrer le développement en bonne et due forme de LearnOCamlEssok.
+\newline
+Mon travail à donc consisté à développer le FrontEnd et le BackEnd sur cette base déjà existante en supprimant les fonctionnalités inutiles au projet, en rajoutant celles qui n'existaient pas encore et en modifiant celles qui pouvaient servir.
+\newline
+\newline
+Par la suite un serveur correspondra à une instance de LearnOCaml. Un enseignant, donc ici un utilisateur, peut posséder plusieurs instances de LearnOCaml, par exemple une pour chacune de ses classes, le nombre maximal d'instance se fera au cas par cas.
+\newpage
+\textbf{Le FrontEnd}
+\newline
+\newline
+\textit{Présentation}
+\newline
+\newline
+Le FrontEnd est composé de nombreux modules qui s'occupent de leur tâche respective. Nous ne parlerons pratiquement pas des modules de NodeJS car il y en a énormement et que ce n'est pas le propos ici.
+\newline
+J'ai structuré mon FrontEnd en quinze modules spécifiques et j'ai directement utlisé trente-huit modules de NodeJS qui eux-même dépendent de nombreux autres modules.
+\newline
+Pour se donner une idée du nombre de dépendances, le fichier qui liste les dépendances npm fait 10000 lignes et celui de yarn fait 7000 lignes.
+\newline
+L'arborescence de mes modules donne donc ceci :
+\begin{itemize}
+	\item[] app/
+	\begin{itemize}
+		\item[]admin/
+		\item[]auth/
+		\item[]contact/
+		\item[]core/
+		\begin{itemize}
+			\item[]interceptors/
+			\item[]models/
+			\item[]services/
+		\end{itemize}
+		\item[]delete-account/
+		\item[]disable-account/
+		\item[]editor/
+		\item[]help/
+		\item[]home/
+		\item[]profile/
+		\item[]profile-settings/
+		\item[]reset-password/
+		\item[]server/
+		\item[]server-settings/
+		\item[]shared/
+		\begin{itemize}
+			\item[]layout/
+			\item[]server-helpers/
+			\item[]user-helpers/
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
+Le module core contient le coeur de l'application et le module shared contient toutes les informations qui seront partagées entre les modules, ils sont donc différents des autres modules.
+\newpage
+\textit{Le module app}
+\newline
+\newline
+Le module app est un module sans en être un car il regroupe toutes les informations des modules qui le compose et automatise leur fonctionnement.
+Il joue le rôle du cerveau dans l'application et c'est ce module qui est chargé par un navigateur web. C'est donc le module principal du FrontEnd autour duquel s'articule toute la logique des différents modules.
+Par la suite lorsque nous parlerons d'exporter des informations au module app/, il s'agira simplement de transmettre des informations à ce module pour qu'il les coordonne dans l'application globale.
+\newline
+\newline
+\textit{Les modules standards}
+\newline
+\begin{figure}[h!]
+	\centering
+  	\begin{subfigure}[b]{1.0\linewidth}
+	\includegraphics[width=\linewidth]{ang.jpeg}
+	\caption{fonctionnement d'un module standard}
+  	\end{subfigure}
+\end{figure}
+\newline
+Les modules standards comprennent :
+\begin{itemize}
+	\item[$\ast$] \textit{le module admin} : qui gère toutes les fonctionnalités d'administration au niveau du FrontEnd.
+	\item[$\ast$] \textit{le module auth} : qui gère toutes des demandes d'inscription ou de connexion de la part d'un utilisateur
+	\item[$\ast$] \textit{le module contact} : qui affiche la page de contact
+	\item[$\ast$] \textit{le module delete-account} : qui gère la suppression d'utilisateur
+	\item[$\ast$] \textit{le module disable-account} : qui gère la désactivation temporaire d'un utilisateur
+	\item[$\ast$] \textit{le module editor} : qui permet de créer une nouvelle instance de LearnOCaml
+	\item[$\ast$] \textit{le module help} : qui affiche la page d'aide
+	\item[$\ast$] \textit{le module home} : qui s'occupe de la page principale de l'application
+	\item[$\ast$] \textit{le module profile} : qui affiche les informations de base d'un utilisateur
+	\item[$\ast$] \textit{le module profile-settings} : qui affiche toutes les informations d'un utilisateur et qui permet de les modifier
+	\item[$\ast$] \textit{le module reset-password} : qui s'occupe de réinitialiser/changer le mot de passe d'un utilisateur.
+	\item[$\ast$] \textit{le module server} : qui affiche les informations de base d'un serveur.
+	\item[$\ast$] \textit{le module server-settings} : qui affiche toutes les informations d'un serveur et qui permet de les modifier et d'ajouter des exercices à ce serveur.
+\end{itemize}
+Chaque module standard comprend au moins les fichiers suivants :
+\begin{itemize}
+	\item[$\ast$]un fichier "[module].component.ts"
+	\item[$\ast$]un fichier "[module].component.html"
+	\item[$\ast$]un fichier "[module]-routing.module.ts"
+	\item[$\ast$]un fichier "[module].module.ts"
+\end{itemize}
+
+L'organisation est donc en MVC (Modèle-Vue-Contrôleur) afin de bien séparer les différents aspects de l'application.
+\newline
+\begin{figure}[h!]
+	\centering
+  	\begin{subfigure}[b]{0.45\linewidth}
+    \includegraphics[width=\linewidth]{mvc.png}
+  	\end{subfigure}
+\end{figure}
+\newline
+Les fichiers "component.ts" sont les contrôleurs, les fichiers "component.html" sont les vues et les modèles se trouvent dans le module app/core/models.
+\begin{itemize}
+	\item[$\ast$]Un fichier contrôleur contient des fonctions qui contrôleront les actions des utilisateurs sur la vue et qui les communiqueront aux différents services présents dans app/core/services.
+	\item[$\ast$]Un fichier vue contient tout ce que l'utilisateur va vouloir/pouvoir voir. La vue est intéractive grâce à son contrôleur.
+	\item[$\ast$]Un fichier modèle - à ne pas confondre avec un fichier module - contient la représentation abstraite d'un objet en mémoire qui sera chargé par la vue et rempli par le contrôleur.
+\end{itemize}
+
+Les fichiers "routing.module.ts" et "module.ts" gère l'arborescence du site dans le routeur.
+\begin{itemize}
+	\item[$\ast$]Un fichier routing va créer le chemin du module dans le routeur pour que l'utilisateur puisse y accéder. Il va aussi définir les règles d'accès à une page dans le routeur ainsi si l'utilisateur n'a pas les permissions d'accéder à une page, le routeur le redirigera sur sa page principale.
+	\item[$\ast$]Un fichier module va exporter le module concerné vers le module app/ .
+\end{itemize}
+
+Parfois on trouve des fichiers spéciaux dans certains modules, ils ont une utilité bien particulière en fonction du contexte :
+\begin{itemize}
+	\item[$\ast$]Un fichier "service.resolver" va contrôler les informations parvenant au fichier routing depuis les services tel que l'authentification de l'utilisateur.
+	\item[$\ast$]Un fichier "directive.ts" crée des directives dynamiques angular utilisables directement dans les fichiers html, une directive de base est celle de l'authentification, grâce à elle une page html peut savoir si un utilisateur est authentifié et afficher des informations en conséquence.
+	\item[$\ast$]Un fichier "component.css" sert à styliser certaines pages html pour en améliorer le rendu. Le FrontEnd utilise le framework BootStrap pour générer automatiquement son propre css.
+	\item[$\ast$]Un fichier "index.ts" sert à exporter des sous modules aux modules principaux.
+\end{itemize}
+
+\newpage
+\textit{Le module core}
+\newline
+\newline
+Le module core regroupe trois entités \footnote{\label{entites} Une entité désigne un sous-module} qui forment le ciment du FrontEnd.
+\newline
+L'entité "interceptor" gère les tokens avec lesquels le FrontEnd communiquera avec le BackEnd.
+\newline
+L'entité "models" gère toutes les classes dont le FrontEnd aura besoin.
+\newline
+L'entité "services" s'occupe de créer des ponts entre les différents modules du FrontEnd pour qu'ils puissent s'échanger des informations mais aussi des ponts entre le FrontEnd et le Backend via une API pour que les deux entités puissent s'échanger des informations.
+\newline
+\newline
+\textit{Le module shared}
+\newline
+\newline
+Le module shared est constitué de trois entités nécessaires à de nombreux modules.
+\newline
+L'entité "layout" correspond au header et au footer de chaque page, identique pour toutes les pages mais différentes selon les utilisateurs.
+\newline
+L'entité "server-helpers" aide les modules récupérant des informations sur les serveurs à préparer les demandes au BackEnd et à mettre en forme les réponses de celui-ci.
+\newline
+Identiquement l'entité "user-helpers" aide les modules récupérant des informations sur les utilisateurs à préparer les demandes au BackEnd et à mettre en forme les réponses de celui-ci.
+\newpage
+
+\textbf{Le BackEnd}
+\newline
+\newline
+
+\subsubsection{Objectifs secondaires : développer LearnOCaml}
+
+LearnOCaml est en développement sur github et possède un certain nombre d'Issues\footnote{\label{Issues} problèmes ou bugs rencontrés avec la version actuelle}, il m'a été demandé de faire baisser ce nombre.
+\newline
+Pour ce faire je choisissais une issue qui me paraîssait faisable et je commençais à travailler dessus. L'idée était d'en faire deux ou trois par semaine pour me faire la main sur LearnOCaml.
+\newline
+Une fois que l'issue était résolue, je soumettais ma solution sous forme de pull-request (pr). Un pull-request est une proposition de modification partielle du code source d'un projet pour l'améliorer. L'ensemble des personnes travaillant sur le projet peuvent la voir, l'étudier, la commenter et proposer des idées pour l'améliorer. Une fois que la pull-request est validée par le responsable du projet, elle est fusionnée avec le code source, cette opération s'appelle le merge - abusivement nous disons "merger" une "pr".
+\newline
+Je me suis occupé de cette tâche les trois premières semaines de mon stage avant de m'occuper à plein temps de développer LearnOCamlEssok.
+
+\subsubsection{Responsabilités}
+
+Mes responsabilités étaient principalement liées au développement de LearnOCamlEssok. J'étais en charge du développement du FrontEnd et du BackEnd. Ce qui implique l'administration du Cloud mis en place sur OVH.
+\newline
+J'avais donc accès à un compte professionnel sur OVH avec toutes les fonctionnalités d'administration et une carte bleue mise à disposition par l'INRIA. J'étais responsable de l'administration des serveurs OVH, de l'administration des services Kubernetes et des services OpenStack.
+\newline
+L'administration des serveurs OVH consistaient à créer les serveurs dont nous avions besoin, avec les technologies appropriées - serveurs physiques ou serveurs virtuels - et de leur attribuer un nom de domaine.
+\newline
+L'administration des services Kubernetes consistaient à 
+\newline
+L'administration des services OpenStack consistaient à 
+
+\subsubsection{Autonomie et vie en entreprise}
+
+Deux autres stagiaires m'ont accompagné durant une partie de mon stage : Alexandre [nom] et Astyax [nom].
+\newline
+Une forme de complicité et d'entraide s'est rapidement créée entre nous favorisant la bonne humeur et une entraide précieuse.
+\newline
+Yann Régis-Gianas nous faisait travailler le plus possible en autonomie. Il fallait faire des comptes rendus par mail et nous avions des réunions en équipe au moins deux fois par semaine pour discuter de l'avancement des projets.
+\newline
+J'ai énormement apprécié ce mode de fonctionnement sans pression, uniquement basé sur la confiance et c'est notamment ce qui m'a permis d'aller aussi vite.
 
 \subsection{le bilan
 résultats obtenus ( appréciation du maître de stage - productivité ... gestion du temps)
@@ -659,7 +920,9 @@ print S(@ARGV);sub S{$r=(@_[0]%4==0&&@_[0]%100!=0)||@_[0]%400=0;}
 
 \bibliography{library}
 \bibliographystyle{ieeetr}
+https://www.intertech.com/Blog/angular-module-tutorial-application-structure-using-modules/
 http://www.slideshare.net/reidrac/deploying-openstack-object-storage-swift
 https://cloudarchitectmusings.com/2013/11/18/laying-cinder-block-volumes-in-openstack-part-1-the-basics/
 https://www.aquasec.com/wiki/display/containers/Docker+Architecture
+https://nl.wikipedia.org/wiki/Model-view-controller-model
 \end{document}
