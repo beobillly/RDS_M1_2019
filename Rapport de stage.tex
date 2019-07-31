@@ -677,10 +677,8 @@ Mon travail à donc consisté à développer le FrontEnd et le BackEnd sur cette
 \newline
 Par la suite un serveur correspondra à une instance de LearnOCaml. Un enseignant, donc ici un utilisateur, peut posséder plusieurs instances de LearnOCaml, par exemple une pour chacune de ses classes, le nombre maximal d'instance se fera au cas par cas.
 \newpage
-\textbf{Le FrontEnd}
-\newline
-\newline
-\textit{Présentation}
+\subsubsection{Le FrontEnd}
+\textbf{Présentation}
 \newline
 \newline
 Le FrontEnd est composé de nombreux modules qui s'occupent de leur tâche respective. Nous ne parlerons pratiquement pas des modules de NodeJS car il y en a énormement et que ce n'est pas le propos ici.
@@ -722,7 +720,7 @@ L'arborescence de mes modules donne donc ceci :
 \end{itemize}
 Le module core contient le coeur de l'application et le module shared contient toutes les informations qui seront partagées entre les modules, ils sont donc différents des autres modules.
 \newpage
-\textit{Le module app}
+\textbf{Le module app}
 \newline
 \newline
 Le module app est un module sans en être un car il regroupe toutes les informations des modules qui le compose et automatise leur fonctionnement.
@@ -730,7 +728,7 @@ Il joue le rôle du cerveau dans l'application et c'est ce module qui est charg�
 Par la suite lorsque nous parlerons d'exporter des informations au module app/, il s'agira simplement de transmettre des informations à ce module pour qu'il les coordonne dans l'application globale.
 \newline
 \newline
-\textit{Les modules standards}
+\textbf{Les modules standards}
 \newline
 \begin{figure}[h!]
 	\centering
@@ -795,7 +793,7 @@ Parfois on trouve des fichiers spéciaux dans certains modules, ils ont une util
 \end{itemize}
 
 \newpage
-\textit{Le module core}
+\textbf{Le module core}
 \newline
 \newline
 Le module core regroupe trois entités \footnote{\label{entites} Une entité désigne un sous-module} qui forment le ciment du FrontEnd.
@@ -807,7 +805,7 @@ L'entité "models" gère toutes les classes dont le FrontEnd aura besoin.
 L'entité "services" s'occupe de créer des ponts entre les différents modules du FrontEnd pour qu'ils puissent s'échanger des informations mais aussi des ponts entre le FrontEnd et le Backend via une API pour que les deux entités puissent s'échanger des informations.
 \newline
 \newline
-\textit{Le module shared}
+\textbf{Le module shared}
 \newline
 \newline
 Le module shared est constitué de trois entités nécessaires à de nombreux modules.
@@ -819,9 +817,446 @@ L'entité "server-helpers" aide les modules récupérant des informations sur le
 Identiquement l'entité "user-helpers" aide les modules récupérant des informations sur les utilisateurs à préparer les demandes au BackEnd et à mettre en forme les réponses de celui-ci.
 \newpage
 
-\textbf{Le BackEnd}
+\subsubsection{Le BackEnd}
+Le BackEnd définit toutes les ressources, cachées à l'utilisateur, mises en place pour que le FrontEnd fonctionne correctement.
+\newline
+Le BackEnd est constitué d'une API, d'une base de donnée MongoDB, d'un client Kubernetes, d'un client OpenStack Swift et d'un client OpenStack Cinder.
 \newline
 \newline
+\textbf{Spécifications de l'API}
+\newline
+\newline
+L'API utilise le standard CORS, il décrit de nouvelles entêtes HTTP qui offrent aux navigateurs et aux serveurs un moyen de faire une requête vers une URL distante uniquement s'ils en ont l'autorisation. Bien que certaines validations et autorisations peuvent être effectuées par le serveur, il est généralement de la responsabilité du navigateur de supporter ces en-têtes et d'honorer les restrictions qu'elles imposent.
+\newline
+\begin{figure}[h!]
+	\centering
+  	\begin{subfigure}[b]{1.0\linewidth}
+    \includegraphics[width=\linewidth]{cors.png}
+  	\end{subfigure}
+\end{figure}
+\newpage
+
+\textbf{Objets JSON}
+\begin{itemize}
+	\item[]
+	\item[\{]
+	\item[]
+	\begin{itemize}
+		\item["user": \{]
+			\item[]"email": "jake@jake.jake",
+			\item[]"token": "jwt.token.here",
+			\item[]"username": "jake",
+			\item[]"description": "little mermaid",
+			\item[]"image": null
+			\item[]"place": "I work at statefarm"
+			\item[]"goal": "Be happy in my life"
+			\item[]"admin": false
+			\item[]"active": true
+			\item[]"authorized": true
+		\item[\}]
+	\end{itemize}
+	\item[\}]
+	\item[]
+	\item[]
+	\item[\{]
+	\item[]
+	\begin{itemize}
+		\item["profile": \{]
+			\item[]"email": "jake@jake.jake",
+			\item[]"username": "jake",
+			\item[]"description": "little mermaid",
+			\item[]"image": null
+			\item[]"place": "I work at statefarm"
+			\item[]"goal": "Be happy in my life"
+			\item[]"active": true
+			\item[]"authorized": true
+		\item[\}]
+	\end{itemize}
+	\item[\}]
+	\item[]
+	\item[]
+	\item[]
+	\item[\{]
+	\item[]
+	\begin{itemize}
+		\item["server": \{]
+			\item[]"slug": "how-to-train-your-dragon-esef545",
+			\item[]"title": "How to train your dragon",
+			\item[]"description": "Ever wonder how?",
+			\item[]"body": "It takes a Jacobian",
+			\item[]"createdAt": "2016-02-18T03:22:56.637Z",
+			\item[]"updatedAt": "2016-02-18T03:48:35.824Z",
+			\item[]"goal": "Be happy in my life"
+			\item[]
+			\begin{itemize}
+				\item["profile": \{]
+					\item[]"email": "jake@jake.jake",
+					\item[]"username": "jake",
+					\item[]"description": "little mermaid",
+					\item[]"image": null
+					\item[]"place": "I work at statefarm"
+					\item[]"goal": "Be happy in my life"
+					\item[]"active": true
+				\item[\}]
+			\end{itemize}
+			\item[]"active": true
+			\item[]"volume": "IDK42424242424242424242"
+		\item[\}]
+	\end{itemize}
+	\item[\}]
+	\item[]
+	\item[]
+	\item[\{]
+	\item[]
+	\begin{itemize}
+		\item["errors": \{]
+			\item["body":][
+			\item[]"can't be empty"
+			\item[]]
+		\item[\}]
+	\end{itemize}
+	\item[\}]
+\end{itemize}
+\newpage
+\textbf{Endpoints}\footnote{\label{EndPoints}Un point d'extrémité (EndPoint) est un dispositif informatique distant qui communique avec un réseau auquel il est connecté. Les Endpoints représentent les principaux points d'entrée vulnérables pour les cybercriminels.}
+\newline
+\newline
+\textit{Authentification:}
+\newline
+POST /api/users/login
+\newline
+Exemple de requête:
+\begin{itemize}
+\item[\{]
+\begin{itemize}
+	\item[]
+	\item["user":\{]
+	\item[]"email": "yrg@irif.fr",
+	\item[]"password": "LearnOCamlIsTheBestPlatform"
+	\item[\}]
+\end{itemize}
+\item[\}]
+\end{itemize}
+Pas d'authentication requise, renvoie un utilisateur (User).
+\newline
+Champs requis : email, password
+\newline
+\newline
+\textit{Inscription:}
+\newline
+POST /api/users
+\newline
+Exemple de requête:
+\begin{itemize}
+	\item[\{]
+	\begin{itemize}
+		\item[]
+		\item["user":\{]
+		\item[]"username": "Yann Régis-Gianas",
+		\item[]"email": "yrg@irif.fr",
+		\item[]"password": "LearnOCamlIsTheBestPlatform",
+		\item[]"goal": "be happy",
+		\item[]"description": "a cool french teacher"
+		\item[]"place": "Paris Diderot (Paris 7)"
+		\item[\}]
+	\end{itemize}
+	\item[\}]
+\end{itemize}
+Pas d'authentication requise, renvoie un utilisateur (User).
+\newline
+Champs requis : email, password, username
+\newpage
+\textit{Récupérer l'utilisateur courant}
+\newline
+GET /api/user
+\newline
+Authentification requise, renvoie un utilisateur qui est l'utilisateur courant
+\newline
+\newline
+\textit{Récupérer tous les utilisateurs (Commande administrateur)}
+\newline
+GET /api/users
+\newline
+Paramètres de la requête:
+\newline
+Filter by author:
+\newline
+?author=jake
+\newline
+Filter by active:
+\newline
+?active=true
+\newline
+Filter by authorized:
+\newline
+?authorized=true
+\newline
+Limit number of articles (default is 20):
+\newline
+?limit=20
+\newline
+Offset/skip number of articles (default is 0):
+\newline
+?offset=0
+\newline
+Authentification requise, mode administrateur requis
+\newline
+\newline
+\textit{Mettre à jour un utilisateur}
+\newline
+PUT /api/user
+\newline
+Un utilisateur peut mettre son profil à jour, un administrateur peut mettre n'importe quel profil à jour.
+\newline
+Exemple de requête:
+\begin{itemize}
+	\item[\{]
+	\begin{itemize}
+		\item[]
+		\item["user":\{]
+		\item[]"username": "YRG",
+		\item[]"place": "INRIA"
+		\item[\}]
+	\end{itemize}
+	\item[\}]
+\end{itemize}
+Authentification requise, renvoie un utilisateur
+\newline
+Champs acceptés: email, username, description, image, place, goal
+\newpage
+\textit{Changer de mot de passe}
+\newline
+POST /api/reset-password
+\newline
+Exemple de requête:
+\begin{itemize}
+	\item[\{]
+	\begin{itemize}
+		\item[]
+		\item["user":\{]
+		\item[]"email": "yrg@irif.fr",
+		\item[]"password": "LearnOCamlIsTheBestPlatform",
+		\item[]"new\_password": "665esqf5es6q5eFzJEaxafvuiezf46qefg5",
+		\item[]"new\_password\_verification": "665esqf5es6q5eFzJEaxafvuiezf46qefg5",
+		\item[\}]
+	\end{itemize}
+	\item[\}]
+\end{itemize}
+Authentification requise, renvoie un utilisateur.
+\newline
+\newline
+\textit{Désactiver ou activer un utilisateur}
+\newline
+POST /api/users/disable
+\newline
+Permet à un utilisateur de désactiver ou d'activer son profil (si celui-ci était désactivé), le processus entraine automatiquement une désactivation ou une activation des serveurs de l'utilisateur.
+\newline
+Un utilisateur ne peut désactiver que son compte, un administrateur peut désactiver le compte de n'importe quel utilisateur.
+\newline
+La requête est identique à celle de reset-password sans le champ new\_password.
+\newline
+Authentification requise, renvoie un utilisateur.
+\newline
+\newline
+\textit{Supprimer un utilisateur}
+\newline
+POST /api/users/delete
+\newline
+Permet à un utilisateur de supprimer définitivement son profil, le processus entraine automatiquement une suppression définitive des serveurs de l'utilisateur.
+\newline
+Un utilisateur ne peut supprimer que son compte, un administrateur peut supprimer le compte de n'importe quel utilisateur.
+\newline
+La requête est identique à celle de disable-account.
+\newline
+Authentification requise, renvoie un status (204 si tout s'est bien passé).
+\newline
+\newline
+\textit{Activer un utilisateur (Commande administrateur)}
+\newline
+POST /api/user/activate
+\newline
+Permet à un administrateur de valider l'inscription d'un utlisateur ce qui l'autorise à utiliser les fonctionnalités de LearnOCamlEssok.
+\newline
+Touy utilisateur inscrit doit se faire valider son compte avant de pouvoir gérer ses instances de LearnOCaml.
+\newline
+Authentification requise, mode administrateur requis
+\newpage
+\textit{Récupérer un profil}
+\newline
+GET /api/profiles/:username
+\newline
+Authentification requise, renvoie un profil
+\newline
+\newline
+\textit{Récupérer un profil (Commande administrateur)}
+\newline
+GET /api/profiles/user/:username
+\newline
+Authentification requise, mode administrateur requis, renvoie un utilisateur
+\newline
+\newline
+\textit{Lister des serveurs}
+\newline
+GET /api/servers
+\newline
+Renvoie les articles d'un utilisateur trié par date de création mais aussi filtré par auteur (commande administrateur) et par état du serveur (serveur activé ou non).
+\newline
+Un utilisateur ne peut avoir accès qu'à ses serveurs, un administrateur peut avoir accès à tous les serveurs de tous les utilisateurs.
+\newline
+Paramètres de la requête :
+\newline
+Filter by author:
+\newline
+?author=jake
+\newline
+Filter by active:
+\newline
+?active=true
+\newline
+Limit number of articles (default is 20):
+\newline
+?limit=20
+\newline
+Offset/skip number of articles (default is 0):
+\newline
+?offset=0
+\newline
+Authentification requise, va renvoyer plusieurs serveurs ordonnés par le plus récent d'abord.
+\newline
+\newline
+\textit{Obtenir un serveur}
+\newline
+GET /api/servers/:slug
+\newline
+Renvoie un serveur d'un utilisateur si celui-ci lui appartient, un administrateur peut récupérer n'importe quel serveur.
+\newline
+Authentification requise, va renvoyer un serveur
+\newline
+\newline
+\textit{Créer un serveur}
+\newline
+POST /api/servers
+\newline
+Exemple de requête:
+\begin{itemize}
+	\item[\{]
+	\begin{itemize}
+		\item[]
+		\item["servers":\{]
+		\item[]"title": "How to train your dragon"
+		\item[]"description": "Ever wonder how?"
+		\item[]"body": "You have to believe"
+		\item[\}]
+	\end{itemize}
+	\item[\}]
+\end{itemize}
+Authentification requise, renvoie un serveur.
+\newline
+champ requis: title
+\newline
+Optional fields: description, body
+\newline
+\newline
+\textit{Mettre à jour les information d'un serveur}
+\newline
+PUT /api/servers/:slug
+\newline
+Exemple de requête:
+\begin{itemize}
+	\item[\{]
+	\begin{itemize}
+		\item[]
+		\item["servers":\{]
+		\item[]"title": "Did you train your dragon?"
+		\item[\}]
+	\end{itemize}
+	\item[\}]
+\end{itemize}
+Authentification requise, renvoie un serveur.
+\newline
+Optional fields: title, description, body
+\newline
+Le slug \footnote{\label{slug}Un slug est composé du titre d'un serveur et d'une particule unique attaché à celui-ci, garantissant l'unicité des noms des serveurs} va aussi être mis à jour si le titre est modifié.
+\newline
+\newline
+\textit{Désactiver/Eteindre ou Activer/Allumer un serveur}
+\newline
+POST /api/servers/disable/:slug
+\newline
+Permet de désactiver/éteindre\footnote{\label{etat}Pour plus de visibilité sur les termes allumer, éteindre et supprimer un serveur, reporter vous à la section client OpenStack du BackEnd} un serveur pour qu'un utilisateur puisse y ajouter/uploader des exercices sous forme d'archive.
+\newline
+Une fois l'upload terminé, l'utilisateur peut rallumer son serveur.
+\newline
+Un utilisateur ne peut gérer que ses serveurs. Un administrateur peut désactiver/activer n'importe quel serveur.
+\newline
+Authentification requise
+\newline
+\newline
+\textit{Supprimer un serveur}
+\newline
+DELETE /api/servers/:slug
+\newline
+Permet de supprimer\ref{etat} le serveur d'un utilisateur, le processus est irréversible.
+\newline
+Un utilisateur ne peut supprimer que ses serveurs. Un administrateur peut supprimer n'importe quel serveur.
+\newline
+Authentification requise
+\newline
+\newline
+\textit{Uploader une archive}
+\newline
+POST /api/uploads/
+\newline
+Lorsqu'un serveur est éteint, un utilisateur peut décider d'y uploader une archive, depuis une url ou depuis un fichier local, contenant les exercices qu'il souhaite ajouter à son instance de LearnOCaml.
+\newline
+Un utilisateur ne peut ajouter d'exercices que sur ses serveurs, un administrateur peut ajouter des exercices sur n'importe quel serveur.
+\newline
+Authentification requise
+\newline
+\newline
+\textit{Télécharger une archive}
+\newline
+GET /api/uploads/
+\newline
+Lorsqu'un serveur est éteint, un utilisateur peut décider de télécharger une archive, contenant l'ensemble des exercices qu'il a ajouté à son instance de LearnOCaml.
+\newline
+Un utilisateur ne peut récupérer les exercices que de ses serveurs, un administrateur peut récupérer les exercices de n'importe quel serveur.
+\newline
+Authentification requise
+\newline
+\newline
+
+
+Les autres codes d'erreurs renvoyés par l'API:
+\newline
+401 pour les demandes non autorisées, lorsqu'une demande nécessite une authentification mais qu'elle n'est pas fournie.
+\newline
+403 pour les demandes interdites, lorsqu'une demande est valide mais que l'utilisateur ne dispose pas des autorisations nécessaires pour exécuter l'action.
+\newline
+404 pour les demandes non trouvées, lorsqu'une ressource est introuvable pour répondre à la demande.
+
+\newpage
+
+\textbf{La base de donnée}
+
+
+\newpage
+
+\textbf{Le client kubernetes}
+
+
+\newpage
+
+\textbf{Le client OpenStack Swift}
+
+
+\newpage
+
+\textbf{Le client OpenStack Cinder}
+
+
+\newpage
+
 
 \subsubsection{Objectifs secondaires : développer LearnOCaml}
 
@@ -855,10 +1290,10 @@ Yann Régis-Gianas nous faisait travailler le plus possible en autonomie. Il fal
 \newline
 J'ai énormement apprécié ce mode de fonctionnement sans pression, uniquement basé sur la confiance et c'est notamment ce qui m'a permis d'aller aussi vite.
 
-\subsection{le bilan
+\subsection{le bilan}
 résultats obtenus ( appréciation du maître de stage - productivité ... gestion du temps)
 difficultés rencontrées et solutions apportées
-enseignements/apports du stage (connaissances - compétences)}
+enseignements/apports du stage (connaissances - compétences)
 
 \newpage
 
