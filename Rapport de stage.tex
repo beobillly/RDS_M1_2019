@@ -5,6 +5,9 @@
 \usepackage{color}
 \usepackage{hyperref}
 \usepackage{amsmath}
+\usepackage{geometry}\geometry{margin=1in}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 
 \renewcommand\lstlistingname{Quelltext} % Change language of section name
 
@@ -285,7 +288,7 @@ Kubernetes (communément appelé "K8s") est un système open source qui vise à 
 \begin{figure}[h!]
 	\centering
   	\begin{subfigure}[b]{1.0\linewidth}
-	\includegraphics[width=\linewidth]{kubernetes.png}
+	\includegraphics[width=\linewidth]{Kubernetes.png}
 	\caption{Plan de contrôle Kubernetes}
   	\end{subfigure}
 \end{figure}
@@ -583,7 +586,7 @@ Un document balisé par Markdown peut être converti en HTML, en PDF ou en autre
 \begin{figure}[h!]
 	\centering
   	\begin{subfigure}[b]{0.25\linewidth}
-	\includegraphics[width=\linewidth]{laTeX.png}
+	\includegraphics[width=\linewidth]{LaTeX.png}
   	\end{subfigure}
 \end{figure}
 
@@ -1238,23 +1241,210 @@ Les autres codes d'erreurs renvoyés par l'API:
 \newpage
 
 \textbf{La base de donnée}
+\newline
+\newline
+La base de donnée Mongodb fonctionne en mémoire dans un docker. La base stocke les objets User, Server comme des Schemas et propose une panoplie de fonctions liée à ceux-ci.
+\newline
+\newline
+\textbf{Les Utilisateurs}
+\newline
+\newline
+Un utilisateur est composé des éléments suivants :
+\begin{itemize}
+	\item[username: \{]
+	\begin{itemize}
+		\item[]
+		\item[]"type": String,
+		\item[]"lowercase": true,
+		\item[]"unique": true,
+		\item[]"required": [true, "can't be blank"],
+		\item[]"match": [/\^ [a-zA-Z0-9]+\$/, 'is invalid'],
+		\item[]"index": true
+	\end{itemize}
+	\item[\}]
+	\item[email: \{]
+	\begin{itemize}
+		\item[]
+		\item[]"type": String,
+		\item[]"lowercase": true,
+		\item[]"unique": true,
+		\item[]"required": [true, "can't be blank"],
+		\item[]"match": [/\ S+\@\ S+\ .\ S+/, 'is invalid'],
+		\item[]"index": true
+	\end{itemize}
+	\item[\}]
+	\item[]description: String,
+	\item[]place: String,
+	\item[]goal: String,
+	\item[admin: \{]
+	\begin{itemize}
+		\item[]
+		\item[]type: Boolean,
+		\item[]default: false 
+	\end{itemize}
+	\item[\}]
+	\item[active: \{]
+	\begin{itemize}
+		\item[]
+		\item[]type: Boolean,
+		\item[]default: true 
+	\end{itemize}
+	\item[\}]
+	\item[authorized: \{]
+	\begin{itemize}
+		\item[]
+		\item[]type: Boolean,
+		\item[]default: false 
+	\end{itemize}
+	\item[\}]
+	\item[]image: String,
+  	\item[]hash: String,
+  	\item[]salt: String 
+\end{itemize}
 
+Des contrôles importants sont donc fait sur le nom et l'email de l'utilisateur.
+\newline
+\newline
+Les fonctions associées aux utilisateurs sont :
+\begin{itemize}
+	\item[$\ast$]validPassword(String: password) qui prend un password en paramètres et qui vérifie si le hash de ce password correspond au hash du password stocké dans la base de donnée.
+	\item[$\ast$]setPassword(String: password) qui prend un password en paramètres et qui l'attribue à l'utilisateur après l'avoir hashé.
+	\item[$\ast$]generateJWT() qui génère un token d'identification pour l'utilisateur
+	\item[$\ast$]isAdmin() qui renvoie si l'utilsiateur est admin ou non
+	\item[$\ast$]findAllUsers(Object: query, int: limit, int: offset) qui renvoie une "Promise"\footnote{\label{promise}Objet javascript utilisé pour réprésenter l'eventuel résultat d'une opération asynchrone} avec l'ensemble des utilisateurs comme résultat.
+	\item[$\ast$]findAnUser(String: username) renvoie une Promise\ref{promise} avec comme résultat l'utilisateur dont le nom est donné en paramètres.
+	\item[$\ast$]findAllServersOfAnUser(Object: query\_, User: author, Object: payload) renvoie une Promise\ref{promise} contenant tous les serveurs d'un utilisateur.
+	\item[$\ast$]toAuthJSON() renvoie des informations assez détaillées sur l'utilisateurs dans un objet JSON
+	\item[$\ast$]toProfileJSONFor() renvoie les informations utiles pour créer le profile d'un utilisateur.
+\end{itemize}
+\textbf{Les Serveurs}
+\newline
+\newline
+Un serveur est composé des éléments suivants :
+\begin{itemize}
+	\item[slug: \{]
+	\begin{itemize}
+		\item[]
+		\item[]"type": String,
+		\item[]"lowercase": true,
+		\item[]"unique": true,
+	\end{itemize}
+	\item[\}]
+	\item[email: \{]
+	\begin{itemize}
+		\item[]
+		\item[]"type": String,
+		\item[]"lowercase": true,
+		\item[]"unique": true,
+		\item[]"required": [true, "can't be blank"],
+		\item[]"match": [\/\^[a-zA-Z0-9]+\$\/, 'is invalid'],
+		\item[]"index": true
+	\end{itemize}
+	\item[\}]
+	\item[]description: String,
+	\item[]body: String,
+	\item[]volume: String,
+	\item[processing: \{]
+	\begin{itemize}
+		\item[]
+		\item[]type: Boolean,
+		\item[]default: false 
+	\end{itemize}
+	\item[\}]
+	\item[active: \{]
+	\begin{itemize}
+		\item[]
+		\item[]type: Boolean,
+		\item[]default: true 
+	\end{itemize}
+	\item[\}]
+	\item[author: \{]
+	\begin{itemize}
+		\item[]
+		\item[]type: mongoose.Schema.Types.ObjectId
+		\item[]ref: 'User'
+	\end{itemize}
+	\item[\}]
+	\item[]image: String,
+	\item[]hash: String,
+  	\item[]salt: String 
+\end{itemize}
+
+Les éléments important d'un serveur sont son slug - qui représente son nom auquel s'est rajouté une suite de caractère unique généré aléatoirement-, son auteur, son nom -title- et son volume -qui représente l'ID du volume Cinder qui contient les données de ce serveur-.
+\newline
+Les fonctions associées aux serveurs sont :
+\begin{itemize}
+	\item[$\ast$]slugify() qui cré le slug d'un serveur à partir de son nom
+	\item[$\ast$]toJSONFor(User: author) qui renvoie un objet JSON avec les informations utiles sur le serveur
+\end{itemize}
 
 \newpage
 
 \textbf{Le client kubernetes}
-
-
-\newpage
-
-\textbf{Le client OpenStack Swift}
-
+\newline
+\newline
+Le client kubernetes permet de faire différentes opérations, depuis le Backend, sur les plateformes dédiées.
+\newline
+Le client kubernetes, "k8s", est en réalité une représentation abstraite de quatre clients kubernetes utilisant chacun sa propre API.
+\newline
+Ces quatres client sont k8sApiDeploy qui gère les déploiements, k8sApi qui gère toutes les opérations relatives au noyau kubernetes, k8sApiIngress qui gère les Ingress et k8sApiJobs qui gère les jobs.
+\newline
+Le client kubernetes va donc s'occuper de lier un serveur à un déploiement kubernetes contenant une instance de LearnOCaml.
+\newline
+Le principe de fonctionnement est le suivant : on crée un déploiement qui va gérer les pods associés à un serveur, puis le service (Kube-Proxy) qui lui sera associé et enfin l'Ingress qui va définir les règles de connexions à ce déploiement.
+\newline
+Tous ces clients possèdent un nombres importants de fonctions "basiques" qu'il faudra personnaliser pour créer des fonctions plus intéressantes :
+\begin{itemize}
+	\item[$\ast$]createNamespacedDeployment(Object: deployement) est une fonction qui prend un objet javascript représentant un déploiement et le créant dans kubernetes.
+	\item[$\ast$]readNamespacedDeployment() va renvoyer le déploiement associé à un serveur.
+	\item[$\ast$]deleteNamespacedDeployment() va supprimer le déploiement d'un serveur.
+	\item[$\ast$]createNamespacedService(Object: service) va prendre un objet javascript représentant un service et le créer dans kubernetes.
+	\item[$\ast$]deleteNamespacedService() va supprimer le service associé à un serveur.
+	\item[$\ast$]createNamespacedIngress(Object: rule) va prendre l'objet javascript représentant une règle d'Ingress et la créer dans kubernetes.
+	\item[$\ast$]patchNamespacedIngress(Promise: response) va mettre à jour les règles de l'Ingress d'un serveur avec les règles contenus dans la réponse passée en paramètres.
+	\item[$\ast$]deleteNamespacedIngress() va supprimer un Ingress dans kubernetes.
+	\item[$\ast$]removeIngressFile(Object: rules) va supprimer les règles passées en paramètres contenues dans l'Ingress.
+	\item[$\ast$]createkubelink() va créer tous les liens entre le serveur et kubernetes.
+	\item[$\ast$]removekubelink(Event: eventEmitter, Server: server) va supprimer tous les liens entre un serveur et kubernetes.
+	\item[$\ast$]backup(backupType, backupCommand) va créer un job kubernetes qui executera toutes les actions nécessaires pour garantir la persistance des données lors de l'arrêt d'un serveur ou de sa remise en service.
+	\item[$\ast$]backupUpload() va s'occuper de donner les instructions à la fonction backup() pour un démarrage.
+	\item[$\ast$]backupDownload() va s'occuper de donner les instructions à la fonction backup() pour un arrêt.
+\end{itemize}
+En annexe vous trouverez le code des objets javascript ainsi que les instructions mentionnés ci dessus.
 
 \newpage
 
 \textbf{Le client OpenStack Cinder}
+\newline
+\newline
+Le client Openstack Cinder permet de lier un serveur à un volume persistant. Il s'agit là de donner à un serveur de l'espace de stockage pour qu'il puisse contenir et utiliser les données que nous souhaitons lui transmettre.
+\newline
+Le principe de fonctionnement de Cinder dans les faits : on fait une demande de volume persistant à Openstack, ensuite on récupère l'identifiant du volume qu'il nous on attribué que l'on stocke dans la base de donnée, on utilise cet identifiant à la création du déploiement kubernetes pour qu'il puisse le lier au volume, on vérifie que la liaison a bien été faite et un LearnOCaml basique est prêt à fonctionner.
+\newline
+Pour se faire, nous avons à disposition les fonctions :
+\begin{itemize}
+	\item[$\ast$]listPersistentVolume(Server: server) qui liste tous les volumes persistants et renvoie celui qui est associé au serveur en paramètres.
+	\item[$\ast$]createPersistentVolumeAndLinkKube(Server: server) qui s'occupe de créer le volume persistant puis d'y lier l'instance LearnOCaml contenu dans kubernetes.
+	\item[$\ast$]deleteNamespacedPersistentVolumeClaim() qui permet de supprimer un volume persistant.
+\end{itemize}
+\newpage
 
-
+\textbf{Le client OpenStack Swift}
+\newline
+\newline
+Le client Openstack swift sert à envoyer des données ou à les recevoir depuis le FrontEnd, en l'occurence des archives avec des exercices dedans.
+\newline
+Les données sont contenus dans des contenaires le temps de les "uploader" ou de les "downloader" dans les volumes Cinder. Swift est une technologie complétant Cinder car un volume persistant ne peut pas mettre à jour ses données à jour tout seul une fois lancé. Imaginons Swift comme une clé USB que l'on viendrait introduire dans le volume Cinder pour y injecter des nouvelles données.
+\newline
+La stratégie mise en place pour ces opérations est la suivante : nous créons un jobs kubernetes qui executera les commandes (directement relié au client swift python mis à disposition par Openstack) de téléchargement ou de chargement et qui s'arrêtera une fois sa tâche accomplie.
+\newline
+Pour se faire nous disposons des fonctions :
+\begin{itemize}
+	\item[$\ast$]createSwiftContainer() qui crée un contenaire Swift.
+	\item[$\ast$]getSwiftContainer() qui permet de récupérer le contenaire swift d'un serveur.
+	\item[$\ast$]destroySwiftContainer() qui supprime le contenaire swift lorsqu'on en a plus besoin.
+\end{itemize}
+qui s'ajoutent aux fonctions précédentes.
 \newpage
 
 
@@ -1264,7 +1454,7 @@ LearnOCaml est en développement sur github et possède un certain nombre d'Issu
 \newline
 Pour ce faire je choisissais une issue qui me paraîssait faisable et je commençais à travailler dessus. L'idée était d'en faire deux ou trois par semaine pour me faire la main sur LearnOCaml.
 \newline
-Une fois que l'issue était résolue, je soumettais ma solution sous forme de pull-request (pr). Un pull-request est une proposition de modification partielle du code source d'un projet pour l'améliorer. L'ensemble des personnes travaillant sur le projet peuvent la voir, l'étudier, la commenter et proposer des idées pour l'améliorer. Une fois que la pull-request est validée par le responsable du projet, elle est fusionnée avec le code source, cette opération s'appelle le merge - abusivement nous disons "merger" une "pr".
+Une fois que l'issue était résolue, je soumettais ma solution sous forme de pull-request (pr). Une pull-request est une proposition de modification partielle du code source d'un projet pour l'améliorer. L'ensemble des personnes travaillant sur le projet peuvent la voir, l'étudier, la commenter et proposer des idées pour l'améliorer. Une fois que la pull-request est validée par le responsable du projet, elle est fusionnée avec le code source, cette opération s'appelle le merge - abusivement nous disons "merger" une "pr".
 \newline
 Je me suis occupé de cette tâche les trois premières semaines de mon stage avant de m'occuper à plein temps de développer LearnOCamlEssok.
 
@@ -1272,13 +1462,29 @@ Je me suis occupé de cette tâche les trois premières semaines de mon stage av
 
 Mes responsabilités étaient principalement liées au développement de LearnOCamlEssok. J'étais en charge du développement du FrontEnd et du BackEnd. Ce qui implique l'administration du Cloud mis en place sur OVH.
 \newline
-J'avais donc accès à un compte professionnel sur OVH avec toutes les fonctionnalités d'administration et une carte bleue mise à disposition par l'INRIA. J'étais responsable de l'administration des serveurs OVH, de l'administration des services Kubernetes et des services OpenStack.
+J'avais donc accès à un compte professionnel sur OVH avec toutes les fonctionnalités d'administration et à une carte bleue mise à disposition par l'INRIA. J'étais responsable de l'administration des serveurs OVH, de l'administration des services Kubernetes et des services OpenStack.
 \newline
-L'administration des serveurs OVH consistaient à créer les serveurs dont nous avions besoin, avec les technologies appropriées - serveurs physiques ou serveurs virtuels - et de leur attribuer un nom de domaine.
+L'administration des serveurs OVH consistait à créer les serveurs dont nous avions besoin, avec les technologies appropriées - serveurs physiques ou serveurs virtuels - et de leur attribuer un nom de domaine.
 \newline
-L'administration des services Kubernetes consistaient à 
+L'administration des services Kubernetes consistait à contrôler le comportement de chaque node lors d'opérations (création de déploiement, ...) sur Kubernetes et à réagir en cas de bugs.
 \newline
-L'administration des services OpenStack consistaient à 
+L'administration des services OpenStack consistait à gérer les utilisateurs Openstack avec leurs droits et leurs permissions, gérer les différents services Openstack (Cinder et Swift) depuis OpenStack Horizon et vérifier que chaque opération se déroule correctement et dans le cas échéant corriger les problèmes.
+
+\newpage
+
+\section{Les apports du stage}
+Au cours de ce stage, j’ai beaucoup, beaucoup appris. Les apports que j’ai tiré de cette expérience professionnelle peuvent être regroupés autour de trois idées principales : les compétences acquises, les difficultés rencontrés et solutions apportées ainsi que la vie en société.
+\subsubsection{Compétences acquises}
+
+Parmis les compétences acquises nous avons bien évidemment les compétences techniques liées à la programmation et au développement de LearnOCaml et de LearnOCamlEssok mais aussi de communications soit avec des entreprises tierces, avec des développeurs sur Github ou sur des forums informatiques ou encore avec ma propre équipe.
+\newline
+J'ai également affinées mes compétences relationnelles telles que la patience, la rigueur et l'autonomie.
+
+\subsubsection{Difficultés rencontrés et solutions apportées}
+
+J'ai rencontré énormément de problèmes et de difficultés. Du choix du langage de programmation à l'administration des serveurs Openstack en passant par le service client OVH.
+\newline
+Ma prise de décision, mon évaluation des risques et mon élaboration de stratégie pour en venir à bout ont porté leurs fruits. Certains problèmes étaient pire que d'autres et me mettaient vraiment dans des situations très inconfortables mais j'ai pu les résoudre grâce à ma gestion impéccable du stress, mon ingéniosité et ma chance.
 
 \subsubsection{Autonomie et vie en entreprise}
 
@@ -1290,74 +1496,35 @@ Yann Régis-Gianas nous faisait travailler le plus possible en autonomie. Il fal
 \newline
 J'ai énormement apprécié ce mode de fonctionnement sans pression, uniquement basé sur la confiance et c'est notamment ce qui m'a permis d'aller aussi vite.
 
-\subsection{le bilan}
-résultats obtenus ( appréciation du maître de stage - productivité ... gestion du temps)
-difficultés rencontrées et solutions apportées
-enseignements/apports du stage (connaissances - compétences)
-
-\newpage
-
-\section{Les apports du stage}
-Merci !
-
-\subsection{Subsection}
-
 \newpage
 
 \section{Conclusion}
 
-Ce stage a été très enrichissant pour moi car il m’a permis de découvrir dans le détail le secteur du ………, ses acteurs, contraintes… et il m’a permis de participer concrètement à ses enjeux au travers de mes missions variées comme celle du …. que j’ai particulièrement apprécié. Ce stage m’a aussi permis de comprendre que les missions créatives n’étaient pas les plus adaptées pour moi…et je préfère m’orienter vers les métiers de …. qui me conviennent mieux.(Cette partie doit faire le bilan des plus et moins du stage / votre enrichissement pour votre future carrière)
+Ce stage a été très enrichissant pour moi car il m’a permis de découvrir dans le détail le développement full-stack d'une application, ses acteurs, contraintes… et il m’a permis de participer concrètement à ses enjeux au travers de mes missions variées comme celle du développement de LearnOCamlEssok que j’ai particulièrement apprécié. Ce stage m’a aussi permis de comprendre pleinement l'importance et le poids d'avoir une équipe performante à ses cotés.
+\newline
+L'IRIF qui m’a accueilli pendant ce stage m'a confié un projet neuf, innovant et prometteur, et je suis très fier d’avoir pu y contribuer.
+\newline
+\newline
+Fort de cette expérience et en réponse à ses enjeux, j’aimerais beaucoup continuer à développer et à maintenir LearnOCamlEssok pour le compte de l'INRIA en tant que société ou en auto entrepreneur car il reste beaucoup à faire et ce projet me tient vraiment à coeur par ma réelle implication dans celui-ci, ses acteurs qui cherche à propager librement et gratuitement la connaissance et par sa portée internationale.
 
+% Test of a link : \href{http://www.atec.com}{ici}
 
-L’entreprise … qui m’a accueilli pendant ce stage fait face à une période charnière…, et je suis très fier d’avoir pu contribuer, participer à cette révolution. L’évolution des usages et l’adaptation de l’entreprise au changement de son environnement….
-(Cette partie doit montrer que vous avez su comprendre les enjeux économiques des secteurs de l’entreprise et/ou réponse à la problématique du rapport)
+% Random citation \cite{WEBSITE:1} embeddeed in text.
 
-
-Fort de cette expérience et en réponse à ses enjeux, j’aimerai beaucoup par la suite essayer de m’orienter via un prochain stage, vers le secteur … avec des acteurs de petites tailles, et un important développement d’avenir.
-(ouverture …prochaine étape)
-
-
-\newpage
-\section{Tests}
-\begin{figure}[h!]
-  \centering
-  \begin{subfigure}[b]{0.2\linewidth}
-    \includegraphics[width=\linewidth]{coffee.jpg}
-     \caption{Coffee.}
-  \end{subfigure}
-  \begin{subfigure}[b]{0.2\linewidth}
-    \includegraphics[width=\linewidth]{coffee.jpg}
-    \caption{More coffee.}
-  \end{subfigure}
-  \begin{subfigure}[b]{0.2\linewidth}
-    \includegraphics[width=\linewidth]{coffee.jpg}
-    \caption{Tasty coffee.}
-  \end{subfigure}
-  \begin{subfigure}[b]{0.5\linewidth}
-    \includegraphics[width=\linewidth]{coffee.jpg}
-    \caption{Too much coffee.}
-  \end{subfigure}
-  \caption{The same cup of coffee. Multiple times.}
-  \label{fig:coffee3}
- 
-\end{figure}
-
-Test of a link : \href{http://www.atec.com}{ici}
-
-Random citation \cite{WEBSITE:1} embeddeed in text.
-
-\begin{lstlisting}
-#!/usr/bin/perl
-print S(@ARGV);sub S{$r=(@_[0]%4==0&&@_[0]%100!=0)||@_[0]%400=0;}
-\end{lstlisting}
+% \begin{lstlisting}
+% #!/usr/bin/perl
+% print S(@ARGV);sub S{$r=(@_[0]%4==0&&@_[0]%100!=0)||@_[0]%400=0;}
+% \end{lstlisting}
 
 \newpage
+
+\subsection{annexe}
+objet javascript (deployment, ingress, ...)
+instructions python
 
 \bibliography{library}
 \bibliographystyle{ieeetr}
-https://www.intertech.com/Blog/angular-module-tutorial-application-structure-using-modules/
-http://www.slideshare.net/reidrac/deploying-openstack-object-storage-swift
-https://cloudarchitectmusings.com/2013/11/18/laying-cinder-block-volumes-in-openstack-part-1-the-basics/
-https://www.aquasec.com/wiki/display/containers/Docker+Architecture
-https://nl.wikipedia.org/wiki/Model-view-controller-model
+Random citation \cite{MISC:1} embeddeed in text.
+Random citation \cite{MISC:intertech} embeddeed in text.
+
 \end{document}
