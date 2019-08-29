@@ -8,6 +8,7 @@
 \usepackage{geometry}\geometry{margin=1in}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage[nottoc, notlof, notlot]{tocbibind}
 
 \renewcommand\lstlistingname{Quelltext} % Change language of section name
 
@@ -65,7 +66,7 @@ Avant tout développement sur cette expérience professionnelle, il apparaît op
 Tout d'abord, j'adresse mes remerciements à ma professeure et amie, Mme Ines Klimann, maître de conférences à l'Université Paris Diderot (Paris 7) qui m'a beaucoup aidé dans ma recherche de stage.
 \newline
 Je tiens à remercier vivement mon maitre de stage, Mr Yann Régis-Gianas, maître de conférences à l'Université Paris Diderot (Paris 7) et responsable de la platforme LearnOCaml au sein de l'IRIF pour son accueil, son enthousiasme et ses conseils avisés. Grâce à sa confiance j'ai pu accomplir mes différentes missions en totale autonomie avec rigueur et efficacité. Il fut d'une aide précieuse dans les moments les plus délicats.
-\newline 
+\newline
 Je remercie également l'ensemble des employés de l'IRIF et de l'Université Paris Diderot (Paris 7) pour leur accueil, leur gentillesse et leur professionnalisme.
 Enfin, je tiens à remercier toutes les personnes qui m'ont conseillé et aidé lors de mon stage.
 
@@ -74,14 +75,14 @@ Enfin, je tiens à remercier toutes les personnes qui m'ont conseillé et aidé 
 
 \section{Introduction}
 
-Du 01/06/2019 au 01/09/2019, j’ai effectué un stage au sein de l'Institut de Recherche en Informatique Fondamentale (IRIF\footnote{\label{IRIF} Institut de Recherche en Informatique Fondamentale}). Au cours de ce stage dans l'équipe \begin{math}\pi r^2\end{math}, j’ai pu m’intéresser au développement des méthodes formelles ou mathématiques pour modéliser des systèmes existants, naturels ou artificiels, et pour résoudre des problèmes concrets.
-Plus largement, ce stage a été l’opportunité pour moi d’appréhender l'aspect pratique de tous les metiers liés au développement d'une application de sa conception à sa mise en production et des méthodes pour rendre plus sûre et plus efficace la distribution de systèmes logiciels de grande dimension.
+Du 01/06/2019 au 01/09/2019, j’ai effectué un stage au sein de l'Institut de Recherche en Informatique Fondamentale (IRIF\footnote{\label{IRIF} Institut de Recherche en Informatique Fondamentale}). Au cours de ce stage, j’ai pu m’intéresser au développement des méthodes formelles ou mathématiques pour modéliser des systèmes existants, naturels ou artificiels, et pour résoudre des problèmes concrets.
+Plus largement, ce stage a été l’opportunité d’appréhender l'aspect pratique des metiers liés au développement d'une application de sa conception à sa mise en production et des méthodes pour rendre plus sûre et plus efficace la distribution de systèmes logiciels de grande dimension.
 \newline\newline
-Au-delà d’enrichir mes connaissances informatiques, ce stage m’a permis de comprendre énormement de chose sur le travail en équipe, sur les subtilités de la vie en entreprise et m'a donné de nombreuses pistes sur mon orientation après mon Master 2.
+Au-delà d’enrichir mes connaissances informatiques, ce stage m’a permis de comprendre énormement de chose sur le travail en équipe, sur la vie en entreprise et m'a donné de nombreuses pistes sur mon orientation après mon Master 2.
 Mon stage au pôle Preuves, Programmes et Systèmes (PPS\footnote{\label{PPS} Preuves, Programmes et Systèmes}) de l'IRIF\ref{IRIF} a consisté essentiellement en l'amélioration de la platforme LearnOCaml et au développement d'applications permettant de faciliter et de simplifier son utilisation.
 Mon maître de stage étant maître de conférences à l'Université Paris Diderot (Paris 7) et membre permanant du pôle PPS\ref{PPS}, j’ai pu apprendre dans d’excellentes conditions à utiliser de nombreux outils mis à disposition par Github et à réaliser un FrontEnd, un BackEnd, une API\footnote{\label{API} Interface de Programmation d’Application ou Interface de Programmation Applicative}, à administrer des serveurs Cloud Openstack et des Nodes Kubernetes aussi bien en local qu'avec OVH.
 \newline\newline
-Ce stage a donc été une opportunité pour moi de percevoir comment les recherches menées à l'IRIF\ref{IRIF} reposent sur l’étude et la compréhension des fondements de toute l’informatique, afin d’apporter des solutions innovantes aux défis actuels et futurs des sciences numériques.
+Ce stage a donc été l'opportunité de percevoir comment les recherches menées à l'IRIF\ref{IRIF} reposent sur l’étude et la compréhension des fondements de toute l’informatique, afin d’apporter des solutions innovantes aux défis actuels et futurs des sciences numériques.
 L’élaboration de ce rapport a pour principale source les différents enseignements tirés de la pratique journalière des tâches auxquelles j’étais affecté.
 \newline\newline
 En vue de rendre compte de manière fidèle et analytique des 2 mois passés au sein de l'IRIF\ref{IRIF}, il apparaît logique de présenter à titre préalable le cadre du stage : l'IRIF\ref{IRIF}, et l’environnement du stage, à savoir le secteur PPS\ref{PPS}. Ensuite, il sera précisé les différentes missions et tâches que j’ai pu effectuer au sein du pôle PPS\ref{PPS}. Enfin les nombreux apports que j’ai pu en tirer.
@@ -115,7 +116,7 @@ Six membres de l'IRIF ont été lauréats de l'European Research Council (ERC), 
 Thèmes de recherche
 \newline\newline
 Le programme scientifique du pôle Preuves, programmes et systèmes (PPS) de l'IRIF vise à renforcer les fondements théoriques des langages de programmation, des assistants de preuves et, plus généralement, des formalismes de calcul. Ces problématiques sont abordées en croisant trois points de vue complémentaires :
-\begin{itemize}	
+\begin{itemize}
 	\item[$\ast$]une approche syntaxique, qui développe des langages théoriques issus de formalismes logiques
     \item[$\ast$]une approche algébrique, qui étudie les structures mathématiques liées au calcul
 	\item[$\ast$]une approche pratique, qui modélise et analyse des systèmes de calcul réels
@@ -132,16 +133,16 @@ Le pôle PPS héberge l'équipe-projet \begin{math}\pi r^2\end{math} commune à 
 
 Au cours de ce stage, j’ai eu l’opportunité de découvrir un ensemble de métier sous de nombreuses formes et de comprendre de manière globale les difficultés que les informaticiens pouvaient rencontrer. Pour une meilleure compréhension des tâches que j’ai pu effectuer, il apparaît approprié de traiter en premier lieu des outils qui étaient mis à ma disposition, puis de traiter de manière détaillée les tâches que j’ai pu effectuer.
 
-\subsection{Les outils à ma disposition}
+\subsection{Les outils}
 
 Au cours de ce stage, j’ai passé le plus clair de mon temps à réfléchir et à coder. A mesure que j’apprenais, mes recherches se sont approfondies. Ce n’est donc qu’à partir de la 2e semaine de mon stage que j’ai été véritablement opérationnel, du fait de ma meilleure maîtrise des ressources mises à ma disposition.
 
-\subsubsection{Mon matériel informatique}
+\subsubsection{Le matériel informatique}
 
 A été mis à ma disposition un Dell OptiPlex 7450 All-in-One doté d'un processeur Intel Core i5-7600, d'un SSD de 256GB, de 16GB de RAM et d'un écran 4K. Un vrai bijou de technologie suffisamment puissant pour faire tourner tous les serveurs et toutes les machines virtuelles dont j'avais besoin.
 Le tout relié à la fibre de l'université Paris Diderot (Paris 7), j'avais là de quoi travailler sans craindre le moindre problème de performance.
 
-\subsubsection{Ma distribution}
+\subsubsection{La distribution}
 
 \begin{figure}[h!]
 	\centering
@@ -624,13 +625,13 @@ JavaScript Object Notation (JSON) est un format de données textuelles dérivé 
 
 \subsection{Les missions}
 
-Différentes missions m'ont été confiées durant mon stage toute avec le même but : améliorer le fonctionnement de LearnOCaml.
-Nous organiserons mes missions de deux manières bien distinctes : ma mission principale et mes missions secondaires.
+Différentes missions m'ont été confiées durant le stage toute avec le même but : améliorer le fonctionnement de LearnOCaml.
+Mes missions s'organisent de deux manières bien distinctes : ma mission principale et mes missions secondaires.
 Il serait judicieux avant de rentrer dans les détails de mes missions de vous expliquer le fonctionnement de LearnOCaml et de Learn-OCaml-Essok.
 
 \subsubsection{LearnOCaml}
 
-Comme dit à la section qui porte le même nom des outils mis à ma disposition, LearnOCaml ou Learn-OCaml est une plate-forme d’apprentissage du langage OCaml.
+Comme dit à la section qui porte le même nom des outils mis à disposition, LearnOCaml ou Learn-OCaml est une plate-forme d’apprentissage du langage OCaml.
 LearnOCaml est à destination des enseignants dans le supérieur du monde entier. La platforme est développée en anglais. L'idée est que chaque enseignant possède son instance de LearnOCaml qu'il pourra personnaliser en fonction de ses besoins.
 \newline
 LearnOCaml fonctionne avec des instances, ie chaque personne voulant utiliser ce logiciel doit avoir son propre serveur. Chaque serveur est indépendant des autres sur son contenu, seule sa structure de base - son squelette - est identique.
@@ -665,7 +666,7 @@ J'ai opté pour TypeScript comme langage de programmation et Angular 8 comme fra
 \newline
 \newline
 Rapidement, je me suis rendu compte que j'avais besoin du BackEnd pour réaliser des tests. J'ai alors commencé le développement du BackEnd.
-Le problème était mon manque de connaissances sur le sujet, je n'avais aucune idée de comment faire une application complète tout seul et à partir de rien. Pour palier à ce problème, je me suis dirigé vers des solutions basiques et gratuites toutes prêtes disponibles sur github.
+Le problème était mon manque de connaissances sur le sujet, je n'avais aucune idée de comment faire une application complète tout seul et à partir de rien. Pour palier ce problème, je me suis dirigé vers des solutions basiques et gratuites toutes prêtes disponibles sur github.
 \newline
 \newline
 Thinkster a été d'un grand secours car il proposait exactement ce dont j'avais besoin : des FrontEnd et des BackEnd communiquant entre eux de manière fonctionnelle et sécurisée, le code étant sous licence MIT \footnote{\label{MIT} Massachusetts Institute of Technology, la licence donne à toute personne recevant le logiciel (et ses fichiers) le droit illimité de l'utiliser, le copier, le modifier, le fusionner, le publier, le distribuer, le vendre et le "sous-licencier" (l'incorporer dans une autre licence). La seule obligation est d'incorporer la notice de licence et de copyright dans toutes les copies.}.
@@ -686,7 +687,7 @@ Par la suite un serveur correspondra à une instance de LearnOCaml. Un enseignan
 \newline
 Le FrontEnd est composé de nombreux modules qui s'occupent de leur tâche respective. Nous ne parlerons pratiquement pas des modules de NodeJS car il y en a énormement et que ce n'est pas le propos ici.
 \newline
-J'ai structuré mon FrontEnd en quinze modules spécifiques et j'ai directement utlisé trente-huit modules de NodeJS qui eux-même dépendent de nombreux autres modules.
+J'ai structuré le FrontEnd en quinze modules spécifiques et j'ai directement utlisé trente-huit modules de NodeJS qui eux-même dépendent de nombreux autres modules.
 \newline
 Pour se donner une idée du nombre de dépendances, le fichier qui liste les dépendances npm fait 10000 lignes et celui de yarn fait 7000 lignes.
 \newline
@@ -1280,26 +1281,26 @@ Un utilisateur est composé des éléments suivants :
 	\begin{itemize}
 		\item[]
 		\item[]type: Boolean,
-		\item[]default: false 
+		\item[]default: false
 	\end{itemize}
 	\item[\}]
 	\item[active: \{]
 	\begin{itemize}
 		\item[]
 		\item[]type: Boolean,
-		\item[]default: true 
+		\item[]default: true
 	\end{itemize}
 	\item[\}]
 	\item[authorized: \{]
 	\begin{itemize}
 		\item[]
 		\item[]type: Boolean,
-		\item[]default: false 
+		\item[]default: false
 	\end{itemize}
 	\item[\}]
 	\item[]image: String,
   	\item[]hash: String,
-  	\item[]salt: String 
+  	\item[]salt: String
 \end{itemize}
 
 Des contrôles importants sont donc fait sur le nom et l'email de l'utilisateur.
@@ -1473,18 +1474,18 @@ L'administration des services OpenStack consistait à gérer les utilisateurs Op
 \newpage
 
 \section{Les apports du stage}
-Au cours de ce stage, j’ai beaucoup, beaucoup appris. Les apports que j’ai tiré de cette expérience professionnelle peuvent être regroupés autour de trois idées principales : les compétences acquises, les difficultés rencontrés et solutions apportées ainsi que la vie en société.
+Au cours de ce stage, j’ai beaucoup, beaucoup appris. Les apports que j’ai tiré de cette expérience professionnelle peuvent être regroupés autour de trois idées principales : les compétences acquises, les difficultés rencontrées et solutions apportées ainsi que la vie en société.
 \subsubsection{Compétences acquises}
 
 Parmis les compétences acquises nous avons bien évidemment les compétences techniques liées à la programmation et au développement de LearnOCaml et de LearnOCamlEssok mais aussi de communications soit avec des entreprises tierces, avec des développeurs sur Github ou sur des forums informatiques ou encore avec ma propre équipe.
 \newline
-J'ai également affinées mes compétences relationnelles telles que la patience, la rigueur et l'autonomie.
+J'ai également affinés mes compétences relationnelles telles que la patience, la rigueur et l'autonomie.
 
 \subsubsection{Difficultés rencontrés et solutions apportées}
 
 J'ai rencontré énormément de problèmes et de difficultés. Du choix du langage de programmation à l'administration des serveurs Openstack en passant par le service client OVH.
 \newline
-Ma prise de décision, mon évaluation des risques et mon élaboration de stratégie pour en venir à bout ont porté leurs fruits. Certains problèmes étaient pire que d'autres et me mettaient vraiment dans des situations très inconfortables mais j'ai pu les résoudre grâce à ma gestion impéccable du stress, mon ingéniosité et ma chance.
+Ma prise de décision, mon évaluation des risques et mon élaboration de stratégie pour en venir à bout ont porté leurs fruits. Certains problèmes étaient pires que d'autres et me mettaient vraiment dans des situations très inconfortables mais j'ai pu les résoudre grâce à une gestion impeccable du stress, de l'ingéniosité, de la chance, des conseils forts utiles de la part de mon tuteur et des autres stagiaires.
 
 \subsubsection{Autonomie et vie en entreprise}
 
@@ -1500,12 +1501,12 @@ J'ai énormement apprécié ce mode de fonctionnement sans pression, uniquement 
 
 \section{Conclusion}
 
-Ce stage a été très enrichissant pour moi car il m’a permis de découvrir dans le détail le développement full-stack d'une application, ses acteurs, contraintes… et il m’a permis de participer concrètement à ses enjeux au travers de mes missions variées comme celle du développement de LearnOCamlEssok que j’ai particulièrement apprécié. Ce stage m’a aussi permis de comprendre pleinement l'importance et le poids d'avoir une équipe performante à ses cotés.
+Ce stage a été très enrichissant car il m’a permis de découvrir dans le détail le développement full-stack d'une application, ses acteurs, contraintes… et il m’a permis de participer concrètement à ses enjeux au travers de missions variées comme celle du développement de LearnOCamlEssok que j’ai particulièrement apprécié. Ce stage m’a aussi permis de comprendre pleinement l'importance et le poids d'avoir une équipe performante à ses cotés.
 \newline
 L'IRIF qui m’a accueilli pendant ce stage m'a confié un projet neuf, innovant et prometteur, et je suis très fier d’avoir pu y contribuer.
 \newline
 \newline
-Fort de cette expérience et en réponse à ses enjeux, j’aimerais beaucoup continuer à développer et à maintenir LearnOCamlEssok pour le compte de l'INRIA en tant que société ou en auto entrepreneur car il reste beaucoup à faire et ce projet me tient vraiment à coeur par ma réelle implication dans celui-ci, ses acteurs qui cherche à propager librement et gratuitement la connaissance et par sa portée internationale.
+Fort de cette expérience et en réponse à ses enjeux, j’aimerais beaucoup continuer à développer voir maintenir LearnOCamlEssok car ce projet, sa portée et ses acteurs me tient vraiment à coeur.
 
 % Test of a link : \href{http://www.atec.com}{ici}
 
@@ -1521,10 +1522,32 @@ Fort de cette expérience et en réponse à ses enjeux, j’aimerais beaucoup co
 \subsection{annexe}
 objet javascript (deployment, ingress, ...)
 instructions python
+Random citation \cite{cloudarchitectmusings} embeddeed in text.
 
-\bibliography{library}
-\bibliographystyle{ieeetr}
-Random citation \cite{MISC:1} embeddeed in text.
-Random citation \cite{MISC:intertech} embeddeed in text.
+\newpage
+
+% \bibliographystyle{ieeetr}
+% \bibliography{library}
+\begin{thebibliography}{9}
+
+	\bibitem{intertech}
+    \\\texttt{https://www.intertech.com/Blog/angular-module-tutorial-application-structure-using-modules/}
+
+	\bibitem{slideshare}
+	\\\texttt{http://www.slideshare.net/reidrac/deploying-openstack-object-storage-swift}
+
+	\bibitem{cloudarchitectmusings}
+    \\\texttt{https://cloudarchitectmusings.com/2013/11/18/laying-cinder-block-volumes-in-openstack-part-1-the-basics/}
+
+	\bibitem{aquasec}
+    \\\texttt{https://www.aquasec.com/wiki/display/containers/Docker+Architecture}
+
+	\bibitem{wikipedia}
+    \\\texttt{https://nl.wikipedia.org/wiki/Model-view-controller-model}
+
+	\bibitem{exemple}
+    \\\texttt{https://www.aquasec.com/wiki/display/containers/Docker+Architecture}
+
+	\end{thebibliography}
 
 \end{document}
